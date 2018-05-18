@@ -22,28 +22,24 @@ public class MainFrame extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField input;
-	private JTable table;
-
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					MainFrame frame = new MainFrame();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
 
 	/**
 	 * Create the frame.
 	 */
-	public MainFrame() {
+	public MainFrame(FlightModel model) {
+
+		createWindow();
+	    createButtons();
+
+	    // JTable
+		JTable table = new JTable(model);
+		table.setBounds(10, 42, 835, 373);
+		contentPane.add(table);
+
+		createFilterButtons(table, model);
+	}
+
+	public void createWindow(){
 		setTitle("Welcome to FlightApp");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 871, 530);
@@ -51,15 +47,17 @@ public class MainFrame extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		
+	}
+
+	public void createButtons() {
 		JButton btnSeeSaftyVideo = new JButton("See Safty Video");
 		btnSeeSaftyVideo.setBounds(715, 10, 130, 23);
 		contentPane.add(btnSeeSaftyVideo);
-		
+
 		JButton btnExport = new JButton("Export");
 		btnExport.setBounds(10, 445, 89, 23);
 		contentPane.add(btnExport);
-		
+
 		JButton btnQuit = new JButton("Quit");
 		btnQuit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -69,21 +67,17 @@ public class MainFrame extends JFrame {
 		btnQuit.setForeground(Color.RED);
 		btnQuit.setBounds(756, 445, 89, 23);
 		contentPane.add(btnQuit);
-		
-		FlightModel model = FlightData.initiateData();
-		
-		table = new JTable(model);
-		table.setBounds(10, 42, 835, 373);
-		contentPane.add(table);
-		
+	}
+
+	public void createFilterButtons(JTable table, FlightModel model){
 		Filter filter = new Filter(model, table);
 		filter.filter("");
-		
+
 		input = new JTextField();
 		input.setBounds(10, 11, 86, 20);
 		contentPane.add(input);
 		input.setColumns(10);
-		
+
 		JButton btnSearch = new JButton("Search");
 		btnSearch.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -91,10 +85,10 @@ public class MainFrame extends JFrame {
 				filter.filter(input.getText());
 			}
 		});
-		
+
 		btnSearch.setBounds(106, 10, 89, 23);
 		contentPane.add(btnSearch);
-		
+
 		JButton btnReset = new JButton("Reset");
 		btnReset.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -103,6 +97,9 @@ public class MainFrame extends JFrame {
 		});
 		btnReset.setBounds(207, 10, 89, 23);
 		contentPane.add(btnReset);
-		
+
 	}
+
+
+
 }
