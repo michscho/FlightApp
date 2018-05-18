@@ -46,7 +46,7 @@ public class MainFrame extends JFrame {
 	public MainFrame() {
 		setTitle("Welcome to FlightApp");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 871, 518);
+		setBounds(100, 100, 871, 530);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -94,6 +94,15 @@ public class MainFrame extends JFrame {
 		
 		btnSearch.setBounds(106, 10, 89, 23);
 		contentPane.add(btnSearch);
+		
+		JButton btnReset = new JButton("Reset");
+		btnReset.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				filter.filter("");
+			}
+		});
+		btnReset.setBounds(207, 10, 89, 23);
+		contentPane.add(btnReset);
 		
 	}
 }
