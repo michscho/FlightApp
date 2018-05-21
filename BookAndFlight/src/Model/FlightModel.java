@@ -36,7 +36,7 @@ public class FlightModel implements TableModel {
     }
 
     public int getColumnCount() {
-        return 6;
+        return 12;
     }
 
     public int getRowCount() {
@@ -45,12 +45,18 @@ public class FlightModel implements TableModel {
 
     public String getColumnName( int columnIndex ) {
         switch( columnIndex ){
-            case 0: return "Name";
-            case 1: return "FlightFrom";
-            case 2: return "FlightTo";
-            case 3: return "Hours";
-            case 4: return "Price";
-            case 5: return "FlightIsFull";
+            case 0: return "Flight Number";
+            case 1: return "Start time";
+            case 2: return "Start Airport";
+            case 3: return "End Time";
+            case 4: return "End Airport";
+            case 5: return "Terminal";
+            case 6: return "Gate";
+            case 7: return "Seat";
+            case 8: return "Airplane Type";
+            case 9: return "Airline";
+            case 10: return "Price";
+            case 11: return "Flight is Full?";
             default: throw new IllegalArgumentException( "Wrong column" );
         }
     }
@@ -62,12 +68,18 @@ public class FlightModel implements TableModel {
     public Object getValueAt( int rowIndex, int columnIndex ) {
         Flight flight = flights.get( rowIndex );
         switch( columnIndex ){
-            case 0: return flight.getName();
-            case 1: return flight.getFlightFrom();
-            case 2: return flight.getFlightTo();
-            case 3: return Integer.valueOf( flight.getHours() );
-            case 4: return Integer.valueOf( flight.getPrice() );
-            case 5: return Boolean.valueOf( flight.isFull() );
+            case 0: return flight.getFlightNumber();
+            case 1: return flight.getStartTime();
+            case 2: return flight.getStartAirport();
+            case 3: return flight.getEndTime();
+            case 4: return flight.getEndAirport();
+            case 5: return flight.getTerminal();
+            case 6: return Integer.valueOf(flight.getGate());
+            case 7: return flight.getSeat();
+            case 8: return flight.getAirplaneType();
+            case 9: return flight.getAirline();
+            case 10: return Integer.valueOf( flight.getPrice() );
+            case 11: return Boolean.valueOf( flight.isFull() );
             default: throw new IllegalArgumentException( "Wrong column" );
         }
     }
@@ -76,21 +88,39 @@ public class FlightModel implements TableModel {
         Flight flight = flights.get( rowIndex );
         switch( columnIndex ){
             case 0:
-                flight.setName( (String)aValue );
+                flight.setFlightNumber((String)aValue );
                 break;
             case 1:
-                flight.setFlightFrom( (String)aValue );
+                flight.setStartTime((String)aValue );
                 break;
             case 2:
-                flight.setFlightTo( (String)aValue );
+                flight.setStartAirport((String)aValue );
                 break;
             case 3:
-                flight.setHours(((Integer)aValue).intValue() );
+                flight.setEndTime((String)aValue );
                 break;
             case 4:
-                flight.setPrice(((Integer)aValue).intValue() );
+                flight.setEndAirport((String)aValue );
                 break;
             case 5:
+                flight.setTerminal((String)aValue );
+                break;
+            case 6:
+                flight.setGate(((Integer)aValue).intValue() );
+                break;
+            case 7:
+                flight.setSeat((String)aValue );
+                break;
+            case 8:
+                flight.setAirplaneType((String)aValue );
+                break;
+            case 9:
+                flight.setAirline((String)aValue );
+                break;
+            case 10:
+                flight.setPrice(((Integer)aValue).intValue() );
+                break;
+            case 11:
                 flight.setFull(((Boolean)aValue).booleanValue() );
                 break;
             default:
@@ -108,9 +138,15 @@ public class FlightModel implements TableModel {
             case 0: return String.class;
             case 1: return String.class;
             case 2: return String.class;
-            case 3: return Integer.class;
-            case 4: return Integer.class;
-            case 5: return Boolean.class;
+            case 3: return String.class;
+            case 4: return String.class;
+            case 5: return String.class;
+            case 6: return Integer.class;
+            case 7: return String.class;
+            case 8: return String.class;
+            case 9: return String.class;
+            case 10: return Integer.class;
+            case 11: return Boolean.class;
             default: throw new IllegalArgumentException( "Wrong column" );
         }
     }
