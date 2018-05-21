@@ -15,7 +15,11 @@ public class Filter {
 		table.setRowSorter(sorter);
 	}
 
-	// simple String filter
+	/**
+	 * Simple String filter - will be expanded later
+	 *
+	 * @param query
+	 */
 	public void filter(String query) {
 		sorter.setRowFilter(RowFilter.regexFilter(query));
 	}

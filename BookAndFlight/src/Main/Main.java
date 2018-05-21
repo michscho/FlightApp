@@ -2,10 +2,8 @@ package Main;
 
 import Data.FlightData;
 import Model.FlightModel;
-import SearchEngine.Filter;
 import UI.MainFrame;
 
-import javax.swing.*;
 import java.awt.*;
 
 public class Main {
