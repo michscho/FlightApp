@@ -10,7 +10,16 @@ import SearchEngine.Filter;
 import Data.FlightData;
 import Model.FlightModel;
 
+import java.awt.Cursor;
+import java.awt.Desktop;
+import java.awt.EventQueue;
+
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.awt.event.ActionEvent;
 
 public class MainFrame extends JFrame {
@@ -48,6 +57,12 @@ public class MainFrame extends JFrame {
 		JButton btnSeeSaftyVideo = new JButton("See Safty Video");
 		btnSeeSaftyVideo.setBounds(715, 10, 130, 23);
 		contentPane.add(btnSeeSaftyVideo);
+		btnSeeSaftyVideo.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				goWebsite(btnSeeSaftyVideo);
+			}
+		});
+		
 
 		JButton btnExport = new JButton("Export");
 		btnExport.setBounds(10, 445, 89, 23);
@@ -63,6 +78,19 @@ public class MainFrame extends JFrame {
 		btnQuit.setBounds(756, 445, 89, 23);
 		contentPane.add(btnQuit);
 	}
+	private void goWebsite(JButton btnSeeSaftyVideo) {
+		btnSeeSaftyVideo.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                try {
+                    Desktop.getDesktop().browse(new URI("https://www.youtube.com/watch?v=QjkreLh24y4"));
+                } catch (URISyntaxException | IOException ex) {
+                    //It looks like there's a problem
+                }
+            }
+            
+		});
+		}
 
 	public void createFilterButtons(JTable table, FlightModel model){
 		Filter filter = new Filter(model, table);
