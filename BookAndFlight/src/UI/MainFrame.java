@@ -1,20 +1,15 @@
 package UI;
 
-import java.awt.EventQueue;
+import java.awt.*;
 
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 
 import SearchEngine.Filter;
 
-import javax.swing.JTextField;
-import javax.swing.JTable;
-
 import Data.FlightData;
 import Model.FlightModel;
-import javax.swing.JButton;
-import java.awt.Color;
+
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
@@ -32,9 +27,9 @@ public class MainFrame extends JFrame {
 	    createButtons();
 
 	    // JTable
-		JTable table = new JTable(model);
-		table.setBounds(10, 42, 835, 373);
-		contentPane.add(table);
+        JTable table = new JTable(model);
+
+        contentPane.add(new JScrollPane(table)).setBounds(10, 42, 835, 373);
 
 		createFilterButtons(table, model);
 	}
