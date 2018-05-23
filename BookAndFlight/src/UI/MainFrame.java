@@ -44,6 +44,8 @@ public class MainFrame extends JFrame {
 		setTitle("Welcome to FlightApp");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 871, 530);
+		ImageIcon icon = new ImageIcon(System.getProperty("user.dir").concat("/res/flightIcon.jpg").replace('\\','/'));
+		setIconImage(icon.getImage());
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		} catch (ClassNotFoundException e) {
@@ -55,8 +57,6 @@ public class MainFrame extends JFrame {
 		} catch (UnsupportedLookAndFeelException e) {
 			e.printStackTrace();
 		}
-		ImageIcon icon = new ImageIcon(System.getProperty("user.dir").concat("/BookAndFlight/res/flightIcon.jpg").replace('\\','/'));
-		setIconImage(icon.getImage());
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
