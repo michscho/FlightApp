@@ -7,12 +7,9 @@ import javax.swing.border.EmptyBorder;
 
 import SearchEngine.Filter;
 
-import Data.FlightData;
 import Model.FlightModel;
 
-import java.awt.Cursor;
 import java.awt.Desktop;
-import java.awt.EventQueue;
 
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -58,6 +55,8 @@ public class MainFrame extends JFrame {
 		} catch (UnsupportedLookAndFeelException e) {
 			e.printStackTrace();
 		}
+		ImageIcon icon = new ImageIcon(System.getProperty("user.dir").concat("/BookAndFlight/res/flightIcon.jpg").replace('\\','/'));
+		setIconImage(icon.getImage());
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
