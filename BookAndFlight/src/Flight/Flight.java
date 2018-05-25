@@ -17,7 +17,7 @@ public class Flight{
 
     /**
      *
-     * Konstruktor
+     * Construktor
      *
      * @param flightNumber
      * @param startTime

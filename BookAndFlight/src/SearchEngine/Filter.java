@@ -10,7 +10,7 @@ public class Filter {
 	private FlightModel model;
 
 	public Filter(FlightModel model, JTable table) {
-		this.sorter = new TableRowSorter<FlightModel>(model);
+		this.sorter = new TableRowSorter<>(model);
 		this.model = model;
 		table.setRowSorter(sorter);
 	}
@@ -21,7 +21,17 @@ public class Filter {
 	 * @param query
 	 */
 	public void filter(String query) {
-		sorter.setRowFilter(RowFilter.regexFilter(query));
+		sorter.setRowFilter(RowFilter.regexFilter("(?i)" + query));
+	}
+
+	/**
+	 * Filter which is filtering after index -> column
+	 *
+	 * @param query
+	 * @param index
+	 */
+	public void filter(String query, int index){
+		sorter.setRowFilter(RowFilter.regexFilter("(?i)" + query, index));
 	}
 
 }
