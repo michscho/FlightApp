@@ -1,97 +1,160 @@
 package Data;
 
+import javafx.beans.property.*;
+
 public class Flight{
 
-    private final String flightNumber;
-    private final String startTime;
-    private final String startAirport;
-    private final String endTime;
-    private final String endAirport;
-    private final String terminal;
-    private final int gate;
-    private final String seat;
-    private final String airplaneType;
-    private final String airline;
-    private final int price;
-    private final boolean isFull;
+    private StringProperty flightNumberC;
+    private StringProperty startTimeC;
+    private StringProperty startAirportC;
+    private StringProperty endTimeC;
+    private StringProperty endAirportC;
+    private StringProperty terminalC;
+    private IntegerProperty gateC;
+    private StringProperty seatC;
+    private StringProperty airplaneTypeC;
+    private StringProperty airlineC;
+    private IntegerProperty priceC;
+    private BooleanProperty isFullC;
 
-    /**
-     *
-     * Construktor
-     *
-     * @param flightNumber
-     * @param startTime
-     * @param startAirport
-     * @param endTime
-     * @param endAirport
-     * @param terminal
-     * @param gate
-     * @param seat
-     * @param airplaneType
-     * @param airline
-     * @param price
-     * @param isFull
-     */
-    private Flight(String flightNumber, String startTime, String startAirport, String endTime, String endAirport, String terminal, int gate, String seat, String airplaneType, String airline, int price, boolean isFull) {
-        this.flightNumber = flightNumber;
-        this.startTime = startTime;
-        this.startAirport = startAirport;
-        this.endTime = endTime;
-        this.endAirport = endAirport;
-        this.terminal = terminal;
-        this.gate = gate;
-        this.seat = seat;
-        this.airplaneType = airplaneType;
-        this.airline = airline;
-        this.price = price;
-        this.isFull = isFull;
+/**
+ *
+ * Construktor
+ *
+ * @param flightNumberC
+ * @param startTimeC
+ * @param startAirportC
+ * @param endTimeC
+ * @param endAirportC
+ * @param terminalC
+ * @param gateC
+ * @param seatC
+ * @param airplaneTypeC
+ * @param airlineC
+ * @param priceC
+ * @param isFullC
+ */
+
+public Flight(String flightNumberC, String startTimeC, String startAirportC, String endTimeC, String endAirportC, String terminalC, int gateC, String seatC, String airplaneTypeC, String airlineC, int priceC, boolean isFullC) {
+    this.flightNumberC = new SimpleStringProperty(flightNumberC);
+    this.startTimeC = new SimpleStringProperty(startTimeC);
+    this.startAirportC = new SimpleStringProperty(startAirportC);
+    this.endTimeC = new SimpleStringProperty(endTimeC);
+    this.endAirportC = new SimpleStringProperty(endAirportC);
+    this.terminalC = new SimpleStringProperty(terminalC);
+    this.gateC = new SimpleIntegerProperty(gateC);
+    this.seatC = new SimpleStringProperty(seatC);
+    this.airplaneTypeC = new SimpleStringProperty(airplaneTypeC);
+    this.airlineC = new SimpleStringProperty(airlineC);
+    this.priceC = new SimpleIntegerProperty(priceC);
+    this.isFullC = new SimpleBooleanProperty(isFullC);
+}
+
+    public String getFlightNumberC() {
+        return flightNumberC.get();
     }
 
-    public String getFlightNumber() {
-        return flightNumber;
+
+    public void setFlightNumberC(String flightNumberC) {
+        this.flightNumberC.set(flightNumberC);
     }
 
-    public String getStartTime() {
-        return startTime;
+    public String getStartTimeC() {
+        return startTimeC.get();
     }
 
-    public String getStartAirport() {
-        return startAirport;
+    public void setStartTimeC(String startTimeC) {
+        this.startTimeC.set(startTimeC);
     }
 
-    public String getEndTime() {
-        return endTime;
+    public String getStartAirportC() {
+        return startAirportC.get();
     }
 
-    public String getEndAirport() {
-        return endAirport;
+
+    public void setStartAirportC(String startAirportC) {
+        this.startAirportC.set(startAirportC);
     }
 
-    public String getTerminal() {
-        return terminal;
+    public String getEndTimeC() {
+        return endTimeC.get();
     }
 
-    public int getGate() {
-        return gate;
+
+    public void setEndTimeC(String endTimeC) {
+        this.endTimeC.set(endTimeC);
     }
 
-    public String getSeat() {
-        return seat;
+    public String getEndAirportC() {
+        return endAirportC.get();
     }
 
-    public String getAirplaneType() {
-        return airplaneType;
+
+    public void setEndAirportC(String endAirportC) {
+        this.endAirportC.set(endAirportC);
     }
 
-    public String getAirline() {
-        return airline;
+    public String getTerminalC() {
+        return terminalC.get();
     }
 
-    public int getPrice() {
-        return price;
+
+    public void setTerminalC(String terminalC) {
+        this.terminalC.set(terminalC);
     }
 
-    public boolean isFull() {
-        return isFull;
+    public int getGateC() {
+        return gateC.get();
+    }
+
+
+    public void setGateC(int gateC) {
+        this.gateC.set(gateC);
+    }
+
+    public String getSeatC() {
+        return seatC.get();
+    }
+
+
+    public void setSeatC(String seatC) {
+        this.seatC.set(seatC);
+    }
+
+    public String getAirplaneTypeC() {
+        return airplaneTypeC.get();
+    }
+
+    public void setAirplaneTypeC(String airplaneTypeC) {
+        this.airplaneTypeC.set(airplaneTypeC);
+    }
+
+    public String getAirlineC() {
+        return airlineC.get();
+    }
+
+
+
+    public void setAirlineC(String airlineC) {
+        this.airlineC.set(airlineC);
+    }
+
+    public int getPriceC() {
+        return priceC.get();
+    }
+
+
+
+    public void setPriceC(int priceC) {
+        this.priceC.set(priceC);
+    }
+
+    public boolean isIsFullC() {
+        return isFullC.get();
+    }
+
+
+    public void setIsFullC(boolean isFullC) {
+        this.isFullC.set(isFullC);
     }
 }
