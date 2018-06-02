@@ -3,6 +3,7 @@ package Main;
 
 import Data.Flight;
 import javafx.application.Platform;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -83,8 +84,6 @@ public class MainController implements Initializable {
 
 
     public void searchButtonClicked() {
-        //inputField.getEditor().getText();
-        // JUST FOR DEBUGGIN:
 
         // TODO Linking to Table
     }
