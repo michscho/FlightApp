@@ -1,5 +1,6 @@
 package Main;
 
+import FlightAPI.Request;
 import FlightInformation.FlightInformationController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -18,6 +19,7 @@ public class Main extends Application {
     private static Stage primaryStage;
     private Parent mainLayout;
     public void start(Stage primaryStage) throws Exception{
+        Request request = new Request();
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("Flight App");
         this.primaryStage.getIcons().add(new Image("Main/flightIcon.jpg"));
