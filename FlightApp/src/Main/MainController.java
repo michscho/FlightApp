@@ -1,9 +1,8 @@
 package Main;
 
 
-import Data.Flight;
+import Data.Classes.Flight;
 import javafx.application.Platform;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;

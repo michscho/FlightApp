@@ -1,4 +1,4 @@
-package Data;
+package Data.Classes;
 
 import javafx.beans.property.*;
 
