@@ -1,41 +1,46 @@
 package FlightAPI;
 
-import javax.xml.crypto.dsig.XMLObject;
-import java.util.Date;
+import Data.Converter.IANACodeConverter;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
 
 public class RequestBuilder {
 
 
-    public static void testRequest() throws Exception {
-        XMLReader xmlReader = new XMLReader();
-        xmlReader.readInput(Request.request("https://api.lufthansa.com/v1/operations/schedules/ZRH/FRA/2018-06-02?directFlights=0"));
-    }
+    /**
+     *
+     * @param departure
+     * @param destination
+     * @param date
+     * @param directFlight
+     * @return
+     * @throws Exception
+     */
+    public static String buildRequest(String departure, String destination, String date, boolean directFlight) throws Exception{
 
-    public static void buildRequest(String departure, String destination, String date, boolean directFlight) throws Exception{
+        if (departure.equals("") || destination.equals("") || date.equals("")){
+            return "";
+        }
 
-        // TODO: Data Formater
-        // TODO: departure to IANA Code Converter
-        // TODO: destination to INANA Code Converter
+        String departureIANA = IANACodeConverter.getIANACode(departure);
+        System.out.println("Departure IANA Code: " + departureIANA);
+        String destinationIANA = IANACodeConverter.getIANACode(destination);
+        System.out.println("Arrival IANA Code: " + destinationIANA);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy", Locale.ENGLISH);
+        LocalDate localDate = LocalDate.parse(date, formatter);
+        DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("yyyy-MM-dd", Locale.ENGLISH);
+        String dateFormatted = localDate.format(formatter2);
 
         int directFlightInt = 0;
         if (directFlight){
             directFlightInt = 1;
             }
-        System.out.println(String.format("https://api.lufthansa.com/v1/operations/schedules/%s/%s/%s?directFlights=%d", departure,destination,date,directFlightInt));
 
-        // TODO: Dependecy to Request -> Build Request
-
-    }
-
-    public void readXML(){
+        return(String.format("https://api.lufthansa.com/v1/operations/schedules/%s/%s/%s?directFlights=%d", departureIANA,destinationIANA,dateFormatted,directFlightInt));
 
     }
-
-
-    public static void main(String[] args) throws Exception {
-        testRequest();
-    }
-
 
 
 }

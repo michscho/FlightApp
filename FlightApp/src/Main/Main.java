@@ -1,17 +1,19 @@
 package Main;
 
+import Data.Classes.Flight;
 import FlightAPI.Request;
 import FlightInformation.FlightInformationController;
 import javafx.application.Application;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
-import java.io.File;
+
 import java.io.IOException;
-import java.net.URL;
+
 
 
 public class Main extends Application {
@@ -40,13 +42,16 @@ public class Main extends Application {
      *
      * @throws IOException
      */
-    public static void changeScene() throws IOException{
+    public static void changeScene(ObservableList<Flight> observableList) throws IOException{
         FXMLLoader loader = new FXMLLoader();
-        URL url = new File("resources/fxml/FlightInformationFrame.fxml").toURL();
-        loader.setLocation(url);
-        Parent root = loader.load(url);
-        primaryStage.setScene(new Scene(root, 960, 585));
+        loader.setLocation(Main.class.getResource("FlightInformationFrame.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root, 960, 585);
+        primaryStage.setScene(scene);
+        FlightInformationController controller = loader.getController();
+        controller.setText(observableList);
     }
+
 
 
 

@@ -2,23 +2,27 @@ package Main;
 
 
 import Data.Classes.Flight;
+import Data.Converter.IANACodeConverter;
+import FlightAPI.Request;
+import FlightAPI.XMLReader;
+import Login.UserLogin;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import org.controlsfx.control.textfield.TextFields;
 
 import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ResourceBundle;
+import java.util.*;
+
+import static FlightAPI.RequestBuilder.buildRequest;
+
 
 public class MainController implements Initializable {
 
@@ -55,15 +59,21 @@ public class MainController implements Initializable {
     @FXML
     private Label usernameLabel;
     @FXML
-    private DatePicker inputField;
-    @FXML
     private TableView table;
+    @FXML
+    private TextField departure;
+    @FXML
+    private TextField arrival;
+    @FXML
+    private DatePicker date;
+    @FXML
+    private CheckBox directFlight;
+    @FXML
+    private ProgressIndicator progressIndicator;
 
 
-    public Parent createContent() {
-        final ObservableList<Flight> data = FXCollections.observableArrayList(
-                new Flight("48x1t", "2018.12.01 19:20", "München", "2018.12.01 20:30", "Berlin", "8a", 12, "12", "Boeing 727", "Lufthansa", 120, true)
-        );
+    public void setTable(List<Flight> flightList) {
+        ObservableList<Flight> data = FXCollections.observableList(flightList);
         flightNumberC.setCellValueFactory(new PropertyValueFactory<TableColumn, String>("flightNumberC"));
         startTimeC.setCellValueFactory(new PropertyValueFactory<TableColumn, String>("startTimeC"));
         startAirportC.setCellValueFactory(new PropertyValueFactory<TableColumn, String>("startAirportC"));
@@ -78,13 +88,26 @@ public class MainController implements Initializable {
         isFullC.setCellValueFactory(new PropertyValueFactory<TableColumn, String>("isFullC"));
 
         table.setItems(data);
-        return table;
     }
 
 
-    public void searchButtonClicked() {
+    public void searchButtonClicked() throws Exception {
+        progressIndicator.setVisible(true);
+        String string = buildRequest(departure.getText(), arrival.getText(), date.getEditor().getText(), directFlight.isSelected());
+        if (string.equals("")) {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Search Incorrect");
+            alert.setHeaderText("Please fill your search request.");
+            alert.setContentText("You have to fill in the departure, arrival and the date textfield to make a search");
 
-        // TODO Linking to Table
+            alert.showAndWait();
+        } else {
+            List<Flight> flightList = XMLReader.readInput(Request.request(string));
+            setTable(flightList);
+        }
+
+        progressIndicator.setVisible(false);
+
     }
 
 
@@ -109,12 +132,22 @@ public class MainController implements Initializable {
     }
 
     public void tableClicked() throws IOException {
-        Main.changeScene();
+        List<String> stringList = new ArrayList<>();
+        ObservableList<Flight> observableList = table.getSelectionModel().getSelectedItems();
+        Main.changeScene(observableList);
     }
 
     public void setDate() {
-        DateTimeFormatter df = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm");
-        dateLabel.setText(LocalDateTime.now().format(df));
+        TimerTask timerTask = new TimerTask() {
+            @Override
+            public void run() {
+                DateTimeFormatter df = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm");
+                dateLabel.setText(LocalDateTime.now().format(df));
+            }
+        };
+        Timer timer = new Timer();
+        timer.schedule(timerTask, 20000, 20000);
+        timerTask.run();
     }
 
     public void setUsername() {
@@ -124,10 +157,17 @@ public class MainController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         // That's the name of the file which was created for the scene
+        UserLogin userLogin = new UserLogin();
+        userLogin.createUserLogin();
         String fileName = location.getFile().substring(location.getFile().lastIndexOf('/' + 1), location.getFile().length());
         setDate();
         setUsername();
-        createContent();
+        try {
+            TextFields.bindAutoCompletion(departure, new HashSet<String>(Arrays.asList(IANACodeConverter.getAllAttribues())).toArray(new String[0]));
+            TextFields.bindAutoCompletion(arrival, new HashSet<String>(Arrays.asList(IANACodeConverter.getAllAttribues())).toArray(new String[0]));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
 
