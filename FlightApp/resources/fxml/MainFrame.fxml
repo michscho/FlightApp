@@ -89,12 +89,12 @@
                   </Text>
                   <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="84.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
                       <image>
-                          <Image url="@man-user.png" />
+                          <Image url="file:../../resources/pictures/man-user.png" />
                       </image>
                   </ImageView>
                   <ImageView fitHeight="47.0" fitWidth="21.0" layoutX="49.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
                       <image>
-                          <Image url="@plane.png" />
+                          <Image url="file:../../resources/pictures/plane.png" />
                       </image>
                   </ImageView>
                   <Text layoutX="49.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MUC-BER" textAlignment="CENTER" wrappingWidth="124.4700698852539">
@@ -109,7 +109,7 @@
                   </Text>
                   <ImageView fitHeight="47.0" fitWidth="21.0" layoutX="28.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
                       <image>
-                          <Image url="@icon.png" />
+                          <Image url="file:../../resources/pictures/icon.png" />
                       </image>
                   </ImageView>
                   <Text layoutX="29.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Flight is in 50min" wrappingWidth="193.4700698852539">
