@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 
 import java.io.IOException;
-
+import java.net.URL;
 
 
 public class Main extends Application {
@@ -21,17 +21,18 @@ public class Main extends Application {
     private static Stage primaryStage;
     private Parent mainLayout;
     public void start(Stage primaryStage) throws Exception{
-        Request request = new Request();
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("Flight App");
-        this.primaryStage.getIcons().add(new Image("Main/flightIcon.jpg"));
+        this.primaryStage.getIcons().add(new Image("file:///" + System.getProperty("user.dir") + "\\resources\\pictures\\plane.png"));
         showMainView();
 
     }
 
     private void showMainView() throws IOException {
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(Main.class.getResource("MainFrame.fxml"));
+        URL url = new URL("file:///" + System.getProperty("user.dir") + "\\resources\\fxml\\MainFrame.fxml");
+        System.out.println(url.getFile());
+        loader.setLocation(url);
         mainLayout = loader.load();
         Scene scene = new Scene(mainLayout,960, 584);
         primaryStage.setScene(scene);
@@ -44,7 +45,8 @@ public class Main extends Application {
      */
     public static void changeScene(ObservableList<Flight> observableList) throws IOException{
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(Main.class.getResource("FlightInformationFrame.fxml"));
+        URL url = new URL("file:///" + System.getProperty("user.dir") + "\\resources\\fxml\\FlightInformationFrame.fxml");
+        loader.setLocation(url);
         Parent root = loader.load();
         Scene scene = new Scene(root, 960, 585);
         primaryStage.setScene(scene);

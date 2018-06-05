@@ -22,11 +22,8 @@ public class UserLogin {
         dialog.setTitle("Login FlightApp");
         dialog.setHeaderText("Log in or register for the FlightApp!");
 
-        Window window = dialog.getDialogPane().getScene().getWindow();
-        window.setOnCloseRequest(event -> System.exit(0));
-
         // Set the icon (must be included in the project).
-        ImageView imageView = new ImageView(this.getClass().getResource("userlogin.jpg").toString());
+        ImageView imageView = new ImageView("file:///" +System.getProperty("user.dir") + "\\resources\\pictures\\userlogin.jpg");
         imageView.setFitWidth(100);
         imageView.setPreserveRatio(true);
         imageView.setSmooth(true);
@@ -37,6 +34,7 @@ public class UserLogin {
         // Set the button types.
         ButtonType loginButtonType = new ButtonType("Login", ButtonBar.ButtonData.OK_DONE);
         dialog.getDialogPane().getButtonTypes().addAll(loginButtonType, ButtonType.CANCEL);
+
 
         // Create the username and password labels and fields.
         GridPane grid = new GridPane();
@@ -60,7 +58,11 @@ public class UserLogin {
 
         // Do some validation (using the Java 8 lambda syntax).
         username.textProperty().addListener((observable, oldValue, newValue) -> {
-            loginButton.setDisable(newValue.trim().isEmpty());
+            if (username.getText().length() > 6 && !username.getText().contains("   ")) {
+                loginButton.setDisable(newValue.trim().isEmpty());
+            } else {
+                loginButton.setDisable(true);
+                }
         });
 
         dialog.getDialogPane().setContent(grid);
@@ -73,6 +75,7 @@ public class UserLogin {
             if (dialogButton == loginButtonType) {
                 return new Pair<>(username.getText(), password.getText());
             }
+            System.exit(0);
             return null;
         });
 

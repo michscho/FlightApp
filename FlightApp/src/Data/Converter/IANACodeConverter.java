@@ -34,7 +34,7 @@ public class IANACodeConverter {
         CSVParser csvParser = new CSVParser( new FileInputStream(System.getProperty("user.dir") + "/resources/data/AirportToIANACode.csv") );
         for ( String t; (t = csvParser.nextValue()) != null; ) {
             if (t.equals(IANACode)){
-                String s1 = csvParser.getLine()[0];
+                String s1 = csvParser.getLine()[1];
                 return s1;
             }
         }
