@@ -1,5 +1,6 @@
 package Login;
 
+import Data.Classes.User;
 import javafx.application.Platform;
 import javafx.geometry.Insets;
 import javafx.scene.Node;
@@ -80,6 +81,7 @@ public class UserLogin {
 
         result.ifPresent(usernamePassword -> {
             System.out.println("Username=" + usernamePassword.getKey() + ", Password=" + usernamePassword.getValue());
+            User.setUsername(usernamePassword.getKey());
         });
 
     }

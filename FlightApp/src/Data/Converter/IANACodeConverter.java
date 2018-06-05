@@ -1,6 +1,7 @@
 package Data.Converter;
 
 
+import Util.StringUtil;
 import com.Ostermiller.util.CSVParser;
 
 import java.io.FileInputStream;
@@ -29,27 +30,22 @@ public class IANACodeConverter {
         return "";
     }
 
-    public static String IANAToCity(String IANACode){
-        // TODO
-        return"";
-    }
-
-    public static String[] flatten(String[][] data) {
-        ArrayList<String> list = new ArrayList<String>();
-
-        for(int i = 0; i < data.length; i++) {
-            for(int j = 0; j < data[i].length; j++){
-                list.add(data[i][j]);
+    public static String IANAToCity(String IANACode) throws  IOException{
+        CSVParser csvParser = new CSVParser( new FileInputStream(System.getProperty("user.dir") + "/resources/data/AirportToIANACode.csv") );
+        for ( String t; (t = csvParser.nextValue()) != null; ) {
+            if (t.equals(IANACode)){
+                String s1 = csvParser.getLine()[0];
+                return s1;
             }
         }
-
-        return list.toArray(new String[0]);
+        return "";
     }
 
-    public static String[] getAllAttribues() throws IOException {
+
+    public static String[] getAllAttributes() throws IOException {
         CSVParser csvParser = new CSVParser( new FileInputStream(System.getProperty("user.dir") + "/resources/data/AirportToIANACode.csv") );
         String[][] data = csvParser.getAllValues();
-       return flatten(data);
+       return StringUtil.flatten(data);
 
     }
 

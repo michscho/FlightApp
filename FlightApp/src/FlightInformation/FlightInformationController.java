@@ -1,6 +1,7 @@
 package FlightInformation;
 
 import Data.Classes.Flight;
+import Data.Converter.IANACodeConverter;
 import Main.MainController;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -30,12 +31,12 @@ public class FlightInformationController implements Initializable {
     public FlightInformationController(){
     }
 
-    public void setText(ObservableList<Flight> observableList){
+    public void setText(ObservableList<Flight> observableList) throws Exception{
         flightNumber.setText(observableList.get(0).getFlightNumberC());
         departureTime.setText(observableList.get(0).getStartTimeC());
         arrivalTime.setText(observableList.get(0).getEndTimeC());
-        destination.setText(observableList.get(0).getStartAirportC());
-        arrival.setText(observableList.get(0).getEndAirportC());
+        destination.setText(IANACodeConverter.IANAToCity(observableList.get(0).getStartAirportC()));
+        arrival.setText(IANACodeConverter.IANAToCity(observableList.get(0).getEndAirportC()));
     }
 
 

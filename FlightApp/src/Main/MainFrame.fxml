@@ -77,7 +77,7 @@
                           <Color blue="0.624" green="0.624" red="0.624" fx:id="x211" />
                       </textFill>
                   </Label>
-                  <Text layoutX="59.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Michael Schott" textAlignment="CENTER" wrappingWidth="124.4700698852539">
+                  <Text fx:id="userName" layoutX="59.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Michael Schott" textAlignment="CENTER" wrappingWidth="124.4700698852539">
                       <font>
                           <Font size="16.0" />
                       </font>
@@ -125,7 +125,7 @@
                   <Hyperlink layoutX="563.0" layoutY="16.0" text="Safty Video" AnchorPane.rightAnchor="24.33333333333337" />
                   <TextField fx:id="departure" layoutX="31.0" layoutY="50.0" promptText="Departure" />
                   <TextField fx:id="arrival" layoutX="192.0" layoutY="50.0" promptText="Arrival" />
-                  <DatePicker fx:id="date" layoutX="354.0" layoutY="50.0" promptText="Date" />
+                  <DatePicker fx:id="date" editable="false" layoutX="354.0" layoutY="50.0" promptText="Date" />
                   <CheckBox fx:id="directFlight" layoutX="31.0" layoutY="92.0" mnemonicParsing="false" text="Only direct Flights?" />
                   <Button fx:id="SearchButton" layoutX="476.0" layoutY="88.0" mnemonicParsing="false" onAction="#searchButtonClicked" text="Search" />
                   <ProgressIndicator fx:id="progressIndicator" layoutX="535.0" layoutY="87.0" prefHeight="27.0" prefWidth="35.0" visible="false" />

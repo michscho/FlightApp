@@ -33,7 +33,9 @@ public class XMLReader {
         String endTime;
         String endAirport;
         int gate = 12;
+        // TODO
         String terminal = "na";
+        // TODO
         String numberOfStops;
         String airplaneType = "na";
         String airline;
@@ -53,6 +55,7 @@ public class XMLReader {
             for (int i = 0; i < nList.getLength(); i++) {
                 Node nNode = nList.item(i);
                 System.out.println("\nCurrent Element :" + nNode.getNodeName());
+                gate = 12;
 
                 if (nNode.getNodeType() == Node.ELEMENT_NODE) {
                     Element e = (Element) nNode;
