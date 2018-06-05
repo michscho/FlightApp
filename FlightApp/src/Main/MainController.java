@@ -2,6 +2,7 @@ package Main;
 
 
 import Data.Classes.Flight;
+import Data.Classes.User;
 import Data.Converter.IANACodeConverter;
 import FlightAPI.Request;
 import FlightAPI.XMLReader;
@@ -13,6 +14,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.text.Text;
 import org.controlsfx.control.textfield.TextFields;
 
 import java.io.IOException;
@@ -72,6 +74,10 @@ public class MainController implements Initializable {
     private ProgressIndicator progressIndicator;
 
 
+    @FXML
+    private Text userName;
+
+
     public void setTable(List<Flight> flightList) {
         ObservableList<Flight> data = FXCollections.observableList(flightList);
         flightNumberC.setCellValueFactory(new PropertyValueFactory<TableColumn, String>("flightNumberC"));
@@ -101,14 +107,14 @@ public class MainController implements Initializable {
             alert.setContentText("You have to fill in the departure, arrival and the date textfield to make a search");
 
             alert.showAndWait();
-        } else {
-            List<Flight> flightList = XMLReader.readInput(Request.request(string));
-            setTable(flightList);
         }
-
+                List<Flight> flightList = XMLReader.readInput(Request.request(string));
+                setTable(flightList);
         progressIndicator.setVisible(false);
+            }
 
-    }
+
+
 
 
     public void menuAboutFlightAppClicked() {
@@ -127,10 +133,12 @@ public class MainController implements Initializable {
         Platform.exit();
     }
 
+    // TODO
     public void hyperlinkClicked() {
 
     }
 
+    // TODO Table just opens after two clicks
     public void tableClicked() throws IOException {
         List<String> stringList = new ArrayList<>();
         ObservableList<Flight> observableList = table.getSelectionModel().getSelectedItems();
@@ -138,19 +146,13 @@ public class MainController implements Initializable {
     }
 
     public void setDate() {
-        TimerTask timerTask = new TimerTask() {
-            @Override
-            public void run() {
-                DateTimeFormatter df = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm");
-                dateLabel.setText(LocalDateTime.now().format(df));
-            }
-        };
-        Timer timer = new Timer();
-        timer.schedule(timerTask, 20000, 20000);
-        timerTask.run();
+        DateTimeFormatter df = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm");
+        dateLabel.setText("Current Time: " + LocalDateTime.now().format(df));
     }
 
     public void setUsername() {
+        usernameLabel.setText("Current User: " + User.getUsername());
+        userName.setText(User.getUsername());
     }
 
 
@@ -159,15 +161,29 @@ public class MainController implements Initializable {
         // That's the name of the file which was created for the scene
         UserLogin userLogin = new UserLogin();
         userLogin.createUserLogin();
+        setUsername();
         String fileName = location.getFile().substring(location.getFile().lastIndexOf('/' + 1), location.getFile().length());
         setDate();
-        setUsername();
         try {
-            TextFields.bindAutoCompletion(departure, new HashSet<String>(Arrays.asList(IANACodeConverter.getAllAttribues())).toArray(new String[0]));
-            TextFields.bindAutoCompletion(arrival, new HashSet<String>(Arrays.asList(IANACodeConverter.getAllAttribues())).toArray(new String[0]));
+            TextFields.bindAutoCompletion(departure, new HashSet<String>(Arrays.asList(IANACodeConverter.getAllAttributes())).toArray(new String[0]));
+            TextFields.bindAutoCompletion(arrival, new HashSet<String>(Arrays.asList(IANACodeConverter.getAllAttributes())).toArray(new String[0]));
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        // NOT WORKING SO FAR
+
+//        TimerTask timerTask = new TimerTask() {
+//            @Override
+//            public void run() {
+//                setDate();
+//            }
+//        };
+//        Timer timer = new Timer();
+//        timer.schedule(timerTask, 20000, 20000);
+//        timerTask.run();
+
+
     }
 }
 

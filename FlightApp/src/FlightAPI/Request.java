@@ -1,5 +1,7 @@
 package FlightAPI;
 
+import javafx.scene.control.Alert;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
@@ -11,14 +13,22 @@ public class Request {
             String url = request;
             URL obj = new URL(url);
             HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-            // optional default is GET
             con.setRequestMethod("GET");
-            //add request header
-            con.setRequestProperty("Authorization", "Bearer nuceptkjrwe8d5agkurch3ad ");
+            con.setRequestProperty("Authorization", "Bearer kvrdqmgxygxx9tjw3cn35wwg ");
             con.setRequestProperty("Accept","application/xml");
             int responseCode = con.getResponseCode();
             System.out.println("\nSending 'GET' request to URL : " + url);
             System.out.println("Response Code : " + responseCode);
+
+            if (responseCode != HttpURLConnection.HTTP_OK){
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Error");
+                alert.setHeaderText("Your request failed");
+                alert.setContentText("Error code: " + responseCode);
+
+                alert.showAndWait();
+            }
+
             BufferedReader in = new BufferedReader(
                     new InputStreamReader(con.getInputStream()));
             String inputLine;
@@ -27,10 +37,8 @@ public class Request {
                 response.append(inputLine);
             }
             in.close();
-            //print in String
             System.out.println(response.toString());
             return response.toString();
-            //Read JSON response and print
 
         }
 

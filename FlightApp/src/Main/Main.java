@@ -49,7 +49,11 @@ public class Main extends Application {
         Scene scene = new Scene(root, 960, 585);
         primaryStage.setScene(scene);
         FlightInformationController controller = loader.getController();
-        controller.setText(observableList);
+        try {
+            controller.setText(observableList);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 
