@@ -25,7 +25,6 @@ public class Request {
                 alert.setTitle("Error");
                 alert.setHeaderText("Your request failed");
                 alert.setContentText("Error code: " + responseCode);
-
                 alert.showAndWait();
             }
 

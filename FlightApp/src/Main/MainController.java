@@ -107,10 +107,11 @@ public class MainController implements Initializable {
             alert.setContentText("You have to fill in the departure, arrival and the date textfield to make a search");
 
             alert.showAndWait();
+        } else {
+            List<Flight> flightList = XMLReader.readInput(Request.request(string));
+            setTable(flightList);
+            progressIndicator.setVisible(false);
         }
-                List<Flight> flightList = XMLReader.readInput(Request.request(string));
-                setTable(flightList);
-        progressIndicator.setVisible(false);
             }
 
 
@@ -142,6 +143,9 @@ public class MainController implements Initializable {
     public void tableClicked() throws IOException {
         List<String> stringList = new ArrayList<>();
         ObservableList<Flight> observableList = table.getSelectionModel().getSelectedItems();
+        if (table.getSelectionModel().getSelectedItems().size() == 0){
+            return;
+        }
         Main.changeScene(observableList);
     }
 
@@ -162,7 +166,6 @@ public class MainController implements Initializable {
         UserLogin userLogin = new UserLogin();
         userLogin.createUserLogin();
         setUsername();
-        String fileName = location.getFile().substring(location.getFile().lastIndexOf('/' + 1), location.getFile().length());
         setDate();
         try {
             TextFields.bindAutoCompletion(departure, new HashSet<String>(Arrays.asList(IANACodeConverter.getAllAttributes())).toArray(new String[0]));
