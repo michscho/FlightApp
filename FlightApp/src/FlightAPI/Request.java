@@ -9,12 +9,15 @@ import java.net.URL;
 
 public class Request {
 
+    // get this token at https://developer.lufthansa.com/io-docs
+    private static final String token = "bwhj6dfr93b3cyb4tctdbjzm";
+
      public static String request(String request) throws Exception {
             String url = request;
             URL obj = new URL(url);
             HttpURLConnection con = (HttpURLConnection) obj.openConnection();
             con.setRequestMethod("GET");
-            con.setRequestProperty("Authorization", "Bearer kvrdqmgxygxx9tjw3cn35wwg ");
+            con.setRequestProperty("Authorization", "Bearer " + token + " ");
             con.setRequestProperty("Accept","application/xml");
             int responseCode = con.getResponseCode();
             System.out.println("\nSending 'GET' request to URL : " + url);
