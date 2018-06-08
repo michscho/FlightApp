@@ -27,17 +27,21 @@ public class IANACodeConverter {
             }
 
         }
+        csvParser.close();
         return "";
     }
 
     public static String IANAToCity(String IANACode) throws  IOException{
         CSVParser csvParser = new CSVParser( new FileInputStream(System.getProperty("user.dir") + "/resources/data/AirportToIANACode.csv") );
+        CSVParser csvParserTmp = new CSVParser( new FileInputStream(System.getProperty("user.dir") + "/resources/data/AirportToIANACode.csv") );
+        String tmp = "";
         for ( String t; (t = csvParser.nextValue()) != null; ) {
             if (t.equals(IANACode)){
-                String s1 = csvParser.getLine()[1];
-                return s1;
+                return tmp;
             }
+            tmp = csvParserTmp.nextValue();
         }
+        csvParser.close();
         return "";
     }
 
