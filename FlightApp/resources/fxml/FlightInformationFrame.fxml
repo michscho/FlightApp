@@ -77,12 +77,12 @@
                   </Text>
                   <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="84.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="file:../../resources/pictures/man-user.png" />
+                        <Image url="@../../resources/pictures/man-user.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="47.0" fitWidth="21.0" layoutX="49.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="file:../../resources/pictures/plane.png" />
+                        <Image url="@../../resources/pictures/plane.png" />
                      </image>
                   </ImageView>
                   <Text layoutX="49.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MUC-BER" textAlignment="CENTER" wrappingWidth="124.4700698852539">
@@ -97,7 +97,7 @@
                   </Text>
                   <ImageView fitHeight="47.0" fitWidth="21.0" layoutX="28.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="file:../../resources/pictures/icon.png" />
+                        <Image url="@../../resources/pictures/icon.png" />
                      </image>
                   </ImageView>
                   <Text layoutX="29.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Flight is in 50min" wrappingWidth="193.4700698852539">
@@ -212,17 +212,17 @@
                               </Text>
                               <ImageView fitHeight="44.0" fitWidth="47.0" layoutX="49.0" layoutY="455.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="file:../../resources/pictures/weather/sunny.gif" />
+                                    <Image url="@../../resources/pictures/weather/sunny.gif" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="44.0" fitWidth="47.0" layoutX="179.0" layoutY="455.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="file:../../resources/pictures/weather/nt_rain.gif" />
+                                    <Image url="@../../resources/pictures/weather/nt_rain.gif" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="44.0" fitWidth="47.0" layoutX="310.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="file:../../resources/pictures/weather/nt_tstorms.gif" />
+                                    <Image url="@../../resources/pictures/weather/nt_tstorms.gif" />
                                  </image>
                               </ImageView>
                               <Text fx:id="day" layoutX="39.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monday" wrappingWidth="72.99999967217445">
