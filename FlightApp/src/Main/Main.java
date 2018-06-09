@@ -17,8 +17,15 @@ import java.net.URL;
 
 public class Main extends Application {
 
+    public static boolean developerModus = true;
+
     private static Stage primaryStage;
     public void start(Stage primaryStage) throws Exception{
+        if (developerModus) {
+            System.out.println("--------------------------");
+            System.out.println("Developer Modus is on!!!");
+            System.out.println("--------------------------");
+        }
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("Flight App");
         this.primaryStage.getIcons().add(new Image("file:///" + System.getProperty("user.dir") + "\\resources\\pictures\\plane.png"));

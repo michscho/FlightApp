@@ -5,25 +5,25 @@ public class DataManager {
     // TODO @Leon
     // Frage: wie erstellt man einen Account?
     // Es soll ja nicht pro Login ein Account erstellt werden
-    public void safeUserData(String userName, String password){
+    public static void safeUserData(String userName, String password) {
 
     }
 
     // TODO @Leon
     // was soll gespeichert werden?
     // -> siehe Classes.Flight
-    public void safeFlightData(){
+    public static void safeFlightData() {
 
     }
 
     // TODO @Leon
-    public void loadUserData(){
-
+    public static String[] loadUserData() {
+        return null;
     }
 
     // TODO @Leon
-    public void loadFlightData(){
-
+    public static String[] loadFlightData() {
+        return null;
     }
 
 

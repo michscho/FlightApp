@@ -104,7 +104,7 @@ public class MainController implements Initializable {
     public void searchButtonClicked() throws Exception {
         progressIndicator.setVisible(true);
         String string = buildRequest(departure.getText(), arrival.getText(), date.getEditor().getText(), directFlight.isSelected());
-        if (string.equals("")) {
+        if (string.equals("") && Main.developerModus == false) {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Search Incorrect");
             alert.setHeaderText("Please fill your search request.");
@@ -158,8 +158,8 @@ public class MainController implements Initializable {
     }
 
     public void setUsername() {
-        usernameLabel.setText("Current User: " + User.getUsername());
-        userName.setText(User.getUsername());
+        usernameLabel.setText((Main.developerModus ?  "Developer Modus on" : "Current User: " + User.getUsername()));
+        this.userName.setText(User.getUsername());
     }
 
 
@@ -167,7 +167,7 @@ public class MainController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
 
         // You shouln't login twice
-        if (!alreadyOpended) {
+        if (!alreadyOpended && Main.developerModus == false) {
             UserLogin userLogin = new UserLogin();
             userLogin.createUserLogin();
             alreadyOpended = true;
