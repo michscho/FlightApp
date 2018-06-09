@@ -356,7 +356,8 @@
                                        </children>
                                     </AnchorPane>
                                     <Button layoutX="518.0" layoutY="21.0" mnemonicParsing="false" text="Book Flight" />
-                                    <Button layoutX="518.0" layoutY="61.0" mnemonicParsing="false" text="Flight on Map" />
+                                    <Button layoutX="519.0" layoutY="107.0" mnemonicParsing="false" text="Flight on Map" />
+                                    <Button layoutX="518.0" layoutY="65.0" mnemonicParsing="false" text="Favorite Flight" />
                                  </children>
                                   </AnchorPane>
                            </content>
@@ -367,12 +368,17 @@
                      <content>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <Pagination layoutX="-2.0" layoutY="1.0" maxPageIndicatorCount="2" prefHeight="522.0" prefWidth="643.3333333333334" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                              <TreeView layoutX="107.0" layoutY="45.0" prefHeight="385.0" prefWidth="407.0" AnchorPane.bottomAnchor="91.66666666666669" AnchorPane.leftAnchor="107.0" AnchorPane.rightAnchor="135.00000000000006" AnchorPane.topAnchor="45.0" />
-                              <Button layoutX="536.0" layoutY="394.0" mnemonicParsing="false" text="Rate Flight" />
-                              <Button layoutX="536.0" layoutY="56.0" mnemonicParsing="false" text="Flight on Map" />
-                              <Button layoutX="536.0" layoutY="96.0" mnemonicParsing="false" text="Request Service" />
-                              <Button layoutX="536.0" layoutY="137.0" mnemonicParsing="false" text="Cancel Flight" />
+                              <Pagination fx:id="page" layoutX="-2.0" layoutY="1.0" maxPageIndicatorCount="2" prefHeight="522.0" prefWidth="643.3333333333334" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              <TreeView fx:id="treeView" layoutX="107.0" layoutY="45.0" prefHeight="385.0" prefWidth="407.0" AnchorPane.bottomAnchor="91.66666666666669" AnchorPane.leftAnchor="107.0" AnchorPane.rightAnchor="135.00000000000006" AnchorPane.topAnchor="45.0" />
+                              <Button fx:id="rateButton" layoutX="539.0" layoutY="395.0" mnemonicParsing="false" text="Rate Flight" AnchorPane.bottomAnchor="101.66666666666667" AnchorPane.rightAnchor="37.6666666666667" />
+                              <Button fx:id="mapButton" layoutX="533.0" layoutY="57.0" mnemonicParsing="false" text="Flight on Map" AnchorPane.rightAnchor="24.0" />
+                              <Button fx:id="requestButton" layoutX="536.0" layoutY="96.0" mnemonicParsing="false" text="Request Service" AnchorPane.rightAnchor="14.000000000000043" />
+                              <Button fx:id="cancelButton" layoutX="536.0" layoutY="137.0" mnemonicParsing="false" text="Cancel Flight" AnchorPane.rightAnchor="29.33333333333337" />
+                              <Text fx:id="text" layoutX="237.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently no flight booked or favorited">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
                            </children></AnchorPane>
                      </content>
                   </Tab>
