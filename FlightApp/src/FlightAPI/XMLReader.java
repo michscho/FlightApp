@@ -213,9 +213,9 @@ public class XMLReader {
                             .getElementsByTagName("Flight")
                             .item(0)
                             .getChildNodes()
-                            .item(2)
+                            .item(4)
                             .getChildNodes()
-                            .item(1)
+                            .item(0)
                             .getChildNodes()
                             .item(0)
                             .getTextContent();
