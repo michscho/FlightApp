@@ -2,6 +2,7 @@ package FlightInformation;
 
 import Data.Classes.Flight;
 import Data.Converter.IANACodeConverter;
+import Main.Main;
 import Main.MainController;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -10,6 +11,7 @@ import javafx.scene.image.Image;
 import javafx.scene.text.Text;
 
 import javax.swing.text.TableView;
+import java.io.IOException;
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
@@ -47,8 +49,10 @@ public class FlightInformationController implements Initializable {
         arrival.setText(IANACodeConverter.IANAToCity(observableList.get(0).getEndAirportC()));
     }
 
-    // TODO: Backbutton: @ELI
 
+    public void toMenuButton() throws IOException {
+        Main.showMainView();
+    }
 
     // TODO: UserData: @Michael
 

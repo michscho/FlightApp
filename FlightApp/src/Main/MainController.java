@@ -79,6 +79,8 @@ public class MainController implements Initializable {
     @FXML
     private Text userName;
 
+    private static boolean alreadyOpended = false;
+
 
     public void setTable(List<Flight> flightList) {
         ObservableList<Flight> data = FXCollections.observableList(flightList);
@@ -163,9 +165,13 @@ public class MainController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        // That's the name of the file which was created for the scene
-        UserLogin userLogin = new UserLogin();
-        userLogin.createUserLogin();
+
+        // You shouln't login twice
+        if (!alreadyOpended) {
+            UserLogin userLogin = new UserLogin();
+            userLogin.createUserLogin();
+            alreadyOpended = true;
+        }
         setUsername();
         setDate();
         try {

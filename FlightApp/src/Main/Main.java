@@ -1,7 +1,6 @@
 package Main;
 
 import Data.Classes.Flight;
-import FlightAPI.Request;
 import FlightInformation.FlightInformationController;
 import javafx.application.Application;
 import javafx.collections.ObservableList;
@@ -19,7 +18,6 @@ import java.net.URL;
 public class Main extends Application {
 
     private static Stage primaryStage;
-    private Parent mainLayout;
     public void start(Stage primaryStage) throws Exception{
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("Flight App");
@@ -28,12 +26,12 @@ public class Main extends Application {
 
     }
 
-    private void showMainView() throws IOException {
+    public static void showMainView() throws IOException {
         FXMLLoader loader = new FXMLLoader();
         URL url = new URL("file:///" + System.getProperty("user.dir") + "\\resources\\fxml\\MainFrame.fxml");
         System.out.println(url.getFile());
         loader.setLocation(url);
-        mainLayout = loader.load();
+        Parent mainLayout = loader.load();
         Scene scene = new Scene(mainLayout,960, 584);
         primaryStage.setScene(scene);
         primaryStage.show();
