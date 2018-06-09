@@ -6,6 +6,7 @@ import Main.MainController;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.image.Image;
 import javafx.scene.text.Text;
 
 import javax.swing.text.TableView;
@@ -27,6 +28,13 @@ public class FlightInformationController implements Initializable {
     private Text destination;
     @FXML
     private Text arrival;
+
+    @FXML
+    private Image wheather_today;
+    @FXML
+    private Image wheather_tomorrow;
+    @FXML
+    private Image wheather_future;
 
     public FlightInformationController(){
     }
