@@ -72,6 +72,8 @@ public class MainController implements Initializable {
     private CheckBox directFlight;
     @FXML
     private ProgressIndicator progressIndicator;
+    @FXML
+    private Hyperlink hyperlink;
 
 
     @FXML
@@ -127,16 +129,15 @@ public class MainController implements Initializable {
     }
 
     public void menuUserClicked() {
-// TODO Display UserInformation
+        // TODO Display UserInformation
     }
 
     public void menuQuitClicked() {
         Platform.exit();
     }
 
-    // TODO
     public void hyperlinkClicked() {
-
+        // TODO @ELI
     }
 
     // TODO Table just opens after two clicks
@@ -146,7 +147,7 @@ public class MainController implements Initializable {
         if (table.getSelectionModel().getSelectedItems().size() == 0){
             return;
         }
-        Main.changeScene(observableList);
+        Main.showFlightInformationView(observableList);
     }
 
     public void setDate() {

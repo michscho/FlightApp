@@ -43,7 +43,7 @@ public class Main extends Application {
      *
      * @throws IOException
      */
-    public static void changeScene(ObservableList<Flight> observableList) throws IOException{
+    public static void showFlightInformationView(ObservableList<Flight> observableList) throws IOException{
         FXMLLoader loader = new FXMLLoader();
         URL url = new URL("file:///" + System.getProperty("user.dir") + "\\resources\\fxml\\FlightInformationFrame.fxml");
         loader.setLocation(url);
