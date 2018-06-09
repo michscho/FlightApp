@@ -122,7 +122,7 @@
         <AnchorPane prefHeight="549.0" prefWidth="503.0" SplitPane.resizableWithParent="false">
           <children>
             <Label alignment="CENTER" font="$x1" layoutX="14.0" layoutY="14.0" style="&#10;" text="Find Flights" textAlignment="CENTER" textFill="$x2" wrapText="false" />
-                  <Hyperlink layoutX="563.0" layoutY="16.0" text="Safty Video" AnchorPane.rightAnchor="24.33333333333337" />
+                  <Hyperlink layoutX="563.0" layoutY="16.0" onAction="#hyperlinkClicked" text="Safty Video" AnchorPane.rightAnchor="24.33333333333337" />
                   <TextField fx:id="departure" layoutX="31.0" layoutY="50.0" promptText="Departure" />
                   <TextField fx:id="arrival" layoutX="192.0" layoutY="50.0" promptText="Arrival" />
                   <DatePicker fx:id="date" editable="false" layoutX="354.0" layoutY="50.0" promptText="Date" />

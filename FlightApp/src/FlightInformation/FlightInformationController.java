@@ -39,6 +39,10 @@ public class FlightInformationController implements Initializable {
         arrival.setText(IANACodeConverter.IANAToCity(observableList.get(0).getEndAirportC()));
     }
 
+    // TODO: Backbutton: @ELI
+
+
+    // TODO: UserData: @Michael
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
