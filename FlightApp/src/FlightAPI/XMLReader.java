@@ -8,6 +8,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;
 
 import Data.Classes.Flight;
+import org.controlsfx.control.WorldMapView;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;
@@ -15,6 +16,7 @@ import org.w3c.dom.Element;
 import org.xml.sax.InputSource;
 
 public class XMLReader {
+
 
     public static Document loadXMLFromString(String xml) throws Exception {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
