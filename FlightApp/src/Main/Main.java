@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 
@@ -36,6 +37,7 @@ public class Main extends Application {
     public static void showMainView() throws IOException {
         FXMLLoader loader = new FXMLLoader();
         URL url = new URL("file:///" + System.getProperty("user.dir") + "\\resources\\fxml\\MainFrame.fxml");
+        primaryStage.setTitle("Flight App - Menu");
         System.out.println(url.getFile());
         loader.setLocation(url);
         Parent mainLayout = loader.load();
@@ -51,6 +53,7 @@ public class Main extends Application {
     public static void showFlightInformationView(ObservableList<Flight> observableList) throws IOException{
         FXMLLoader loader = new FXMLLoader();
         URL url = new URL("file:///" + System.getProperty("user.dir") + "\\resources\\fxml\\FlightInformationFrame.fxml");
+        primaryStage.setTitle("Flight App - Flight Information");
         loader.setLocation(url);
         Parent root = loader.load();
         Scene scene = new Scene(root, 960, 585);
@@ -62,6 +65,22 @@ public class Main extends Application {
             e.printStackTrace();
         }
     }
+
+    public static void showMapView() throws Exception {
+        FXMLLoader loader = new FXMLLoader();
+        URL url = new URL("file:///" + System.getProperty("user.dir") + "\\resources\\fxml\\GMaps.fxml");
+        loader.setLocation(url);
+        Parent root = loader.load();
+        Scene scene = new Scene(root, 960, 585);
+        Stage mapWindow = new Stage();
+        mapWindow.setTitle("Flight App - Map");
+        mapWindow.setScene(scene);
+        mapWindow.initModality(Modality.WINDOW_MODAL);
+        mapWindow.initOwner(primaryStage);
+        mapWindow.show();
+    }
+
+
 
 
 

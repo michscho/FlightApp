@@ -66,7 +66,6 @@ public class FlightInformationController implements Initializable {
     }
 
     public void menuAboutFlightAppClicked() {
-        // TODO Small Frame with some Information
     }
 
     public void menuSettingsClicked() {
@@ -93,6 +92,10 @@ public class FlightInformationController implements Initializable {
 
     public void toMenuButton() throws IOException {
         Main.showMainView();
+    }
+
+    public void toMapButton() throws Exception {
+        Main.showMapView();
     }
 
     public void setTreeView() {

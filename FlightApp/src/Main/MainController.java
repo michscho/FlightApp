@@ -122,8 +122,7 @@ public class MainController implements Initializable {
 
 
 
-    public void menuAboutFlightAppClicked() {
-        // TODO Small Frame with some Information
+    public void menuAboutFlightAppClicked() throws IOException {
     }
 
     public void menuSettingsClicked() {
