@@ -355,9 +355,9 @@
                                           </Text>
                                        </children>
                                     </AnchorPane>
-                                    <Button layoutX="518.0" layoutY="21.0" mnemonicParsing="false" text="Book Flight" />
-                                    <Button layoutX="519.0" layoutY="107.0" mnemonicParsing="false" text="Flight on Map" />
-                                    <Button layoutX="518.0" layoutY="65.0" mnemonicParsing="false" text="Favorite Flight" />
+                                    <Button fx:id="bookFlightButton" layoutX="518.0" layoutY="21.0" mnemonicParsing="false" text="Book Flight" />
+                                    <Button fx:id="flightOnMapButton" layoutX="519.0" layoutY="107.0" mnemonicParsing="false" onAction="#toMapButton" text="Flight on Map" />
+                                    <Button fx:id="favouriteFlightButton" layoutX="518.0" layoutY="65.0" mnemonicParsing="false" text="Favorite Flight" />
                                  </children>
                                   </AnchorPane>
                            </content>

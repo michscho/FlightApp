@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c9be3f2-5a86-4c3d-b617-0fb7d2166385" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/fxml/GMaps.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/library/GMapsFX-2.12.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/library/logback-classic-1.2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/library/logback-core-1.2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/library/slf4j-api-1.7.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Data/Converter/IANACodeConverterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/FlightAPI/XMLReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FlightApp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/fxml/FlightInformationFrame.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fxml/FlightInformationFrame.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FlightAPI/XMLReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlightAPI/XMLReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FlightInformation/FlightInformationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlightInformation/FlightInformationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/Converter/IANACodeConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/Converter/IANACodeConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlightInformation/GMapsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlightInformation/GMapsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MainController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,36 +28,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FlightInformationController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FlightInformation/FlightInformationController.java">
+      <file leaf-file-name="IANACodeConverter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Data/Converter/IANACodeConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FlightAPI/test.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="170">
+              <caret line="10" column="118" selection-start-line="10" selection-start-column="118" selection-end-line="10" selection-end-column="118" />
               <folding>
-                <element signature="n#Departure#0;n#Flight#0;n#Schedule#0;n#ScheduleResource#0;n#!!top" />
-                <element signature="n#Arrival#0;n#Flight#0;n#Schedule#0;n#ScheduleResource#0;n#!!top" />
-                <element signature="n#MarketingCarrier#0;n#Flight#0;n#Schedule#0;n#ScheduleResource#0;n#!!top" />
-                <element signature="n#OperatingCarrier#0;n#Flight#0;n#Schedule#0;n#ScheduleResource#0;n#!!top" />
-                <element signature="n#Equipment#0;n#Flight#0;n#Schedule#0;n#ScheduleResource#0;n#!!top" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2233#2234#0" expanded="true" />
+                <element signature="e#2288#2289#0" expanded="true" />
+                <element signature="e#2382#2383#0" expanded="true" />
+                <element signature="e#2432#2433#0" expanded="true" />
+                <element signature="e#2519#2520#0" expanded="true" />
+                <element signature="e#2566#2567#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Flight.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Data/Classes/Flight.java">
+      <file leaf-file-name="DataManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Data/Database/DataManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+            <state relative-caret-position="357">
+              <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GMapsController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/FlightInformation/GMapsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-641">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Request.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FlightAPI/Request.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-459">
+              <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,17 +82,26 @@
       <file leaf-file-name="XMLReader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FlightAPI/XMLReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="215" column="35" selection-start-line="215" selection-start-column="35" selection-end-line="215" selection-end-column="35" />
+            <state relative-caret-position="-2970">
+              <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
+      <file leaf-file-name="XMLReader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/FlightAPI/XMLReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+            <state relative-caret-position="170">
+              <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserLogin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Login/UserLogin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,38 +109,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main/MainController.java">
+      <file leaf-file-name="FlightInformationFrame.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/fxml/FlightInformationFrame.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="168" column="27" lean-forward="true" selection-start-line="168" selection-start-column="27" selection-end-line="168" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4274#4275#0" expanded="true" />
-                <element signature="e#4305#4306#0" expanded="true" />
-              </folding>
-            </state>
+            <state relative-caret-position="-5763" />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainFrame.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/fxml/MainFrame.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-end-line="51" />
-              <folding>
-                <element signature="n#MenuBar#0;n#children#0;n#VBox#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
         </entry>
       </file>
-      <file leaf-file-name="NativeMethodAccessorImpl.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
+      <file leaf-file-name="DateConverter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Data/Converter/DateConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="221">
+              <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -114,8 +129,8 @@
       <file leaf-file-name="RequestBuilder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FlightAPI/RequestBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+            <state relative-caret-position="93">
+              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,47 +138,67 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FlightInformationFrame.fxml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/fxml/FlightInformationFrame.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12">
-              <caret line="56" column="31" lean-forward="true" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
-              <folding>
-                <element signature="n#MenuBar#0;n#children#0;n#VBox#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>png</find>
       <find>Stops</find>
       <find>menuBar</find>
+      <find>FRA</find>
+      <find>Frankfurt</find>
+      <find>sofia</find>
+      <find>frankfurt</find>
+      <find>sidjx</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Michael Schott &lt;ga48xop@mytum.de&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Main/Main.java" />
-        <option value="$PROJECT_DIR$/src/FlightAPI/XMLReader.java" />
-        <option value="$PROJECT_DIR$/src/FlightInformation/FlightInformationController.java" />
-        <option value="$PROJECT_DIR$/src/Main/MainController.java" />
         <option value="$PROJECT_DIR$/resources/fxml/FlightInformationFrame.fxml" />
+        <option value="$PROJECT_DIR$/src/FlightInformation/GMapsDialog.java" />
+        <option value="$PROJECT_DIR$/src/FlightAPI/XMLReader.java" />
+        <option value="$PROJECT_DIR$/resources/fxml/GMaps.fxml" />
+        <option value="$PROJECT_DIR$/src/Main/MainController.java" />
+        <option value="$PROJECT_DIR$/src/FlightInformation/FlightInformationController.java" />
+        <option value="$PROJECT_DIR$/src/FlightInformation/GMaps.java" />
+        <option value="$PROJECT_DIR$/test/Data/IANACodeConverterTest.java" />
+        <option value="$PROJECT_DIR$/test/Data/Converter/IANACodeConverterTest.java" />
+        <option value="$PROJECT_DIR$/src/Data/Converter/IANACodeConverter.java" />
+        <option value="$PROJECT_DIR$/src/FlightInformation/GMapsController.java" />
+        <option value="$PROJECT_DIR$/src/Main/Main.java" />
+        <option value="$PROJECT_DIR$/src/FlightAPI/RequestBuilder.java" />
+        <option value="$PROJECT_DIR$/test/FlightAPI/XMLReader.java" />
       </list>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="y" value="-12" />
+    <option name="x" value="2523" />
+    <option name="y" value="-30" />
     <option name="width" value="1101" />
-    <option name="height" value="1392" />
+    <option name="height" value="1390" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -171,7 +206,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
@@ -197,6 +231,12 @@
               <item name="FlightApp" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="fxml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlightApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlightApp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FlightApp" type="b2602c69:ProjectViewProjectNode" />
@@ -246,21 +286,71 @@
               <item name="FlightApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="FlightApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlightApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlightApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlightApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlightApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlightApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlightApp" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlightApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlightApp" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="Data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlightApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlightApp" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="Data" type="462c0819:PsiDirectoryNode" />
+              <item name="Converter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlightApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlightApp" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="FlightAPI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlightApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SearchEverywhereHistoryKey" value="scene&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/library/ostermillerutils-1.08.02.jar!/" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/library/logback-classic-1.2.1.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Data.Converter" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -274,20 +364,124 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main.Main" />
-      <module name="FlightApp" />
+  <component name="RunManager" selected="JUnit.IANACodeConverterTest.testGetIANAtoCity">
+    <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="IANACodeConverterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FlightApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Main.*" />
+          <option name="PATTERN" value="Data.Converter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Data.Converter" />
+      <option name="MAIN_CLASS_NAME" value="Data.Converter.IANACodeConverterTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <configuration name="IANACodeConverterTest.testGetIANACode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FlightApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Data.Converter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Data.Converter" />
+      <option name="MAIN_CLASS_NAME" value="Data.Converter.IANACodeConverterTest" />
+      <option name="METHOD_NAME" value="testGetIANACode" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="IANACodeConverterTest.testGetIANACodeSpecial" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FlightApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Data.Converter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Data.Converter" />
+      <option name="MAIN_CLASS_NAME" value="Data.Converter.IANACodeConverterTest" />
+      <option name="METHOD_NAME" value="testGetIANACodeSpecial" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="IANACodeConverterTest.testGetIANAtoCity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FlightApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Data.Converter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Data.Converter" />
+      <option name="MAIN_CLASS_NAME" value="Data.Converter.IANACodeConverterTest" />
+      <option name="METHOD_NAME" value="testGetIANAtoCity" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="IANACodeConverterTest.testToIANAConverter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FlightApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Data.Converter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Data.Converter" />
+      <option name="MAIN_CLASS_NAME" value="Data.Converter.IANACodeConverterTest" />
+      <option name="METHOD_NAME" value="testToIANAConverter" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -327,9 +521,20 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="JUnit.IANACodeConverterTest.testToIANAConverter" />
+      <item itemvalue="JUnit.IANACodeConverterTest.testGetIANACode" />
+      <item itemvalue="JUnit.IANACodeConverterTest" />
+      <item itemvalue="JUnit.IANACodeConverterTest.testGetIANACodeSpecial" />
+      <item itemvalue="JUnit.IANACodeConverterTest.testGetIANAtoCity" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.IANACodeConverterTest.testGetIANAtoCity" />
+        <item itemvalue="JUnit.IANACodeConverterTest" />
+        <item itemvalue="JUnit.IANACodeConverterTest.testGetIANACodeSpecial" />
+        <item itemvalue="JUnit.IANACodeConverterTest.testGetIANACode" />
+        <item itemvalue="JUnit.IANACodeConverterTest.testToIANAConverter" />
       </list>
     </recent_temporary>
   </component>
@@ -345,53 +550,156 @@
       <updated>1528370127857</updated>
       <workItem from="1528370129640" duration="3376000" />
     </task>
+    <task id="LOCAL-00001" summary="basic GMap implemenation">
+      <created>1528800128324</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1528800128325</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="IANACodeConverterTest - 2018.06.12 at 21h 21m 09s.xml">
+      <configuration name="IANACodeConverterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IANACodeConverterTest - 2018.06.12 at 21h 21m 36s.xml">
+      <configuration name="IANACodeConverterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IANACodeConverterTest - 2018.06.12 at 21h 22m 40s.xml">
+      <configuration name="IANACodeConverterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IANACodeConverterTest - 2018.06.12 at 21h 24m 06s.xml">
+      <configuration name="IANACodeConverterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IANACodeConverterTest - 2018.06.12 at 21h 24m 27s.xml">
+      <configuration name="IANACodeConverterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IANACodeConverterTest - 2018.06.12 at 21h 27m 32s.xml">
+      <configuration name="IANACodeConverterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IANACodeConverterTest_testGetIANAtoCity - 2018.06.12 at 21h 28m 29s.xml">
+      <configuration name="IANACodeConverterTest.testGetIANAtoCity" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IANACodeConverterTest - 2018.06.12 at 21h 29m 14s.xml">
+      <configuration name="IANACodeConverterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IANACodeConverterTest - 2018.06.12 at 21h 29m 40s.xml">
+      <configuration name="IANACodeConverterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IANACodeConverterTest_testGetIANAtoCity - 2018.06.12 at 21h 30m 53s.xml">
+      <configuration name="IANACodeConverterTest.testGetIANAtoCity" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="3376000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1455" height="935" extended-state="6" />
+    <frame x="2152" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49964157" weight="0.32919255" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32919255" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50107527" side_tool="true" visible="true" weight="0.32919255" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49892473" visible="true" weight="0.32919255" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49964157" weight="0.32919255" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32885906" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50183374" side_tool="true" weight="0.32885906" />
+      <window_info anchor="right" id="Maven Projects" order="4" weight="0.3294621" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49816626" weight="0.32885906" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49964157" visible="true" weight="0.32885906" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.25232974" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32919255" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.25427872" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info id="UI Designer" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39875776" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" id="JetGradle" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="right" id="JetGradle" order="5" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49938875" weight="0.32885906" />
       <window_info anchor="bottom" id="Changes" order="7" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Profiler" order="7" />
-      <window_info anchor="bottom" id="Problems" order="7" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="bottom" id="Profiler" order="9" />
+      <window_info anchor="bottom" id="Problems" order="10" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="Application Servers" order="11" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Application Servers" order="11" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49816626" visible="true" weight="0.32885906" />
+      <window_info anchor="right" id="JetGradle" order="5" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49938875" weight="0.32885906" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="3" />
+      <window_info anchor="bottom" id="Profiler" order="9" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Changes" order="7" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50183374" side_tool="true" weight="0.32885906" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32885906" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Problems" order="10" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49964157" weight="0.32919255" />
+      <window_info anchor="right" id="Maven Projects" order="4" weight="0.3294621" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" weight="0.25488997" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49964157" weight="0.32919255" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39875776" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="changed from Swing to JavaFX" />
     <MESSAGE value="implemented FlightWindow, created Link between main Window and Flight Window, TableView working now, some other adjustments" />
@@ -406,84 +714,15 @@
     <MESSAGE value="IANA to City bug solved" />
     <MESSAGE value="added TODOS" />
     <MESSAGE value="some idea changes i need to commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="some idea changes i need to commit" />
+    <MESSAGE value="basic GMap implemenation" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic GMap implemenation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/data/AirportToIANACode.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140726">
-          <caret line="8278" column="36" selection-start-line="8278" selection-start-column="26" selection-end-line="8278" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FlightAPI/RequestBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/StringUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4274#4275#0" expanded="true" />
-            <element signature="e#4305#4306#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data/Classes/Flight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -572,65 +811,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data/Classes/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="5" selection-start-line="7" selection-start-column="4" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Login/UserLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FlightAPI/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/data/AirportToIANACode.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21958">
-          <caret line="7706" column="31" selection-start-line="7706" selection-start-column="28" selection-end-line="7706" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data/Converter/IANACodeConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-409">
-          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data/Converter/DateConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
           <caret line="139" column="20" selection-start-line="139" selection-start-column="20" selection-end-line="139" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4274#4275#0" expanded="true" />
-            <element signature="e#4305#4306#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -645,27 +831,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data/Database/DataLoad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data/Database/DataMangager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data/Database/DataManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Data/Database/DataLoad.java" />
+    <entry file="file://$PROJECT_DIR$/src/Data/Database/DataMangager.java" />
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-10812" />
@@ -678,37 +845,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/StringUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="57" />
-          <folding>
-            <element signature="e#171#179#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FlightAPI/test.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="n#Departure#0;n#Flight#0;n#Schedule#0;n#ScheduleResource#0;n#!!top" />
-            <element signature="n#Arrival#0;n#Flight#0;n#Schedule#0;n#ScheduleResource#0;n#!!top" />
-            <element signature="n#MarketingCarrier#0;n#Flight#0;n#Schedule#0;n#ScheduleResource#0;n#!!top" />
-            <element signature="n#OperatingCarrier#0;n#Flight#0;n#Schedule#0;n#ScheduleResource#0;n#!!top" />
-            <element signature="n#Equipment#0;n#Flight#0;n#Schedule#0;n#ScheduleResource#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data/Classes/Flight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FlightAPI/test.xml" />
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -716,34 +853,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FlightAPI/XMLReader.java">
+    <entry file="file://$PROJECT_DIR$/resources/library/GMapsFX/src/test/java/com/lynden/gmapsfx/javascript/JavascriptFunctionLineTest.java" />
+    <entry file="file://$PROJECT_DIR$/resources/data/sampleResponse.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="215" column="35" selection-start-line="215" selection-start-column="35" selection-end-line="215" selection-end-column="35" />
+        <state relative-caret-position="340">
+          <caret column="20291" selection-start-column="20291" selection-end-column="20291" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FlightAPI/RequestBuilder.java">
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/javafx.fxml/com/sun/javafx/fxml/MethodHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="251">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FlightInformation/FlightInformationController.java">
+    <entry file="file://$PROJECT_DIR$/src/FlightInformation/GMaps.java" />
+    <entry file="file://$PROJECT_DIR$/src/Util/StringUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="119">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
+    <entry file="file://$PROJECT_DIR$/resources/data/AirportToIANACode.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+        <state relative-caret-position="180">
+          <caret line="2414" column="9" selection-start-line="2414" selection-end-line="2414" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Data/Converter/IANACodeConverterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="55" lean-forward="true" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -752,34 +895,139 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="168" column="27" lean-forward="true" selection-start-line="168" selection-start-column="27" selection-end-line="168" selection-end-column="27" />
+        <state relative-caret-position="515">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4274#4275#0" expanded="true" />
-            <element signature="e#4305#4306#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/fxml/MainFrame.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/src/FlightInformation/FlightInformationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-end-line="51" />
+        <state relative-caret-position="255">
+          <caret line="97" column="15" selection-start-line="97" selection-start-column="15" selection-end-line="97" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
           <folding>
-            <element signature="n#MenuBar#0;n#children#0;n#VBox#0;n#!!top" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/fxml/GMaps.fxml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/fxml/MainFrame.fxml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Data/Classes/Flight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-961">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Data/Classes/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Data/Converter/DateConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Data/Converter/IANACodeConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="118" selection-start-line="10" selection-start-column="118" selection-end-line="10" selection-end-column="118" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2233#2234#0" expanded="true" />
+            <element signature="e#2288#2289#0" expanded="true" />
+            <element signature="e#2382#2383#0" expanded="true" />
+            <element signature="e#2432#2433#0" expanded="true" />
+            <element signature="e#2519#2520#0" expanded="true" />
+            <element signature="e#2566#2567#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Data/Database/DataManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FlightAPI/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FlightAPI/RequestBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FlightAPI/XMLReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2970">
+          <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/FlightAPI/XMLReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login/UserLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/fxml/FlightInformationFrame.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="56" column="31" lean-forward="true" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
+        <state relative-caret-position="-5763" />
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FlightInformation/GMapsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-641">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
-            <element signature="n#MenuBar#0;n#children#0;n#VBox#0;n#!!top" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -801,7 +1049,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -860,6 +1108,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>GMaps</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
