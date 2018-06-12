@@ -18,9 +18,12 @@ import java.net.URL;
 
 public class Main extends Application {
 
-    public static boolean developerModus = true;
+    public final static boolean developerModus = true;
+
+    private final static String userDir = "file:///" + System.getProperty("user.dir");
 
     private static Stage primaryStage;
+
     public void start(Stage primaryStage) throws Exception{
         if (developerModus) {
             System.out.println("--------------------------");
@@ -29,14 +32,14 @@ public class Main extends Application {
         }
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("Flight App");
-        this.primaryStage.getIcons().add(new Image("file:///" + System.getProperty("user.dir") + "\\resources\\pictures\\plane.png"));
+        this.primaryStage.getIcons().add(new Image( userDir + "\\resources\\pictures\\plane.png"));
         showMainView();
 
     }
 
     public static void showMainView() throws IOException {
         FXMLLoader loader = new FXMLLoader();
-        URL url = new URL("file:///" + System.getProperty("user.dir") + "\\resources\\fxml\\MainFrame.fxml");
+        URL url = new URL(userDir + "\\resources\\fxml\\MainFrame.fxml");
         primaryStage.setTitle("Flight App - Menu");
         System.out.println(url.getFile());
         loader.setLocation(url);
@@ -52,7 +55,7 @@ public class Main extends Application {
      */
     public static void showFlightInformationView(ObservableList<Flight> observableList) throws IOException{
         FXMLLoader loader = new FXMLLoader();
-        URL url = new URL("file:///" + System.getProperty("user.dir") + "\\resources\\fxml\\FlightInformationFrame.fxml");
+        URL url = new URL(userDir + "\\resources\\fxml\\FlightInformationFrame.fxml");
         primaryStage.setTitle("Flight App - Flight Information");
         loader.setLocation(url);
         Parent root = loader.load();
@@ -68,7 +71,7 @@ public class Main extends Application {
 
     public static void showMapView() throws Exception {
         FXMLLoader loader = new FXMLLoader();
-        URL url = new URL("file:///" + System.getProperty("user.dir") + "\\resources\\fxml\\GMaps.fxml");
+        URL url = new URL(userDir + "\\resources\\fxml\\GMaps.fxml");
         loader.setLocation(url);
         Parent root = loader.load();
         Scene scene = new Scene(root, 960, 585);
