@@ -3,9 +3,10 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Main/resources" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -25,7 +26,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/src/main/resources/library/controlsfx-9.0.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/src/Main/resources/library/controlsfx-9.0.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -34,7 +35,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/src/main/resources/library/GMapsFX-2.12.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/src/Main/resources/library/GMapsFX-2.12.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -43,7 +44,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/src/main/resources/library/logback-classic-1.2.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/src/Main/resources/library/logback-classic-1.2.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -52,7 +53,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/src/main/resources/library/logback-core-1.2.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/src/Main/resources/library/logback-core-1.2.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -61,7 +62,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/src/main/resources/library/ostermillerutils-1.08.02.jar!/" />
+          <root url="jar://$MODULE_DIR$/src/Main/resources/library/ostermillerutils-1.08.02.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -70,7 +71,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/src/main/resources/library/slf4j-api-1.7.23.jar!/" />
+          <root url="jar://$MODULE_DIR$/src/Main/resources/library/slf4j-api-1.7.23.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -86,5 +87,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Libs" level="project" />
   </component>
 </module>

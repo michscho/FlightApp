@@ -1,6 +1,6 @@
-package main.java.FlightAPI;
+package FlightAPI;
 
-import main.java.MainScreen.Main;
+import MainScreen.Main;
 import javafx.scene.control.Alert;
 import org.w3c.dom.Document;
 
@@ -27,7 +27,7 @@ public class Request {
          if (Main.developerModus){
              DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
              DocumentBuilder db = dbf.newDocumentBuilder();
-             Document doc = db.parse("file:///" + System.getProperty("user.dir") + "\\resources\\data\\sampleResponse.xml");
+             Document doc = db.parse(Request.class.getResource("sampleResponse.xml").openStream());
              System.out.println(toXmlString(doc));
              return toXmlString(doc);
          } else {

@@ -1,4 +1,4 @@
-package main.java.Data.Classes;
+package Data.Classes;
 
 public class User {
 

@@ -1,9 +1,9 @@
-package main.java.FlightInformation;
+package FlightInformation;
 
-import main.java.Data.Classes.Flight;
-import main.java.Data.Converter.IANACodeConverter;
-import main.java.Data.Database.DataManager;
-import main.java.MainScreen.Main;
+import Data.Classes.Flight;
+import Data.Converter.IANACodeConverter;
+import Data.Database.DataManager;
+import MainScreen.Main;
 import javafx.application.Platform;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;

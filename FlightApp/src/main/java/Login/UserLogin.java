@@ -1,6 +1,6 @@
-package main.java.Login;
+package Login;
 
-import main.java.Data.Classes.User;
+import Data.Classes.User;
 import javafx.application.Platform;
 import javafx.geometry.Insets;
 import javafx.scene.Node;

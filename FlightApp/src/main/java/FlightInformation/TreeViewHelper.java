@@ -1,4 +1,4 @@
-package main.java.FlightInformation;
+package FlightInformation;
 
 import java.util.ArrayList;
 import javafx.scene.control.TreeItem;
