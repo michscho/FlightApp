@@ -1,7 +1,7 @@
-package main.java.MainScreen;
+package MainScreen;
 
-import main.java.Data.Classes.Flight;
-import main.java.FlightInformation.FlightInformationController;
+import Data.Classes.Flight;
+import FlightInformation.FlightInformationController;
 import javafx.application.Application;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
@@ -13,7 +13,6 @@ import javafx.stage.Stage;
 
 
 import java.io.IOException;
-import java.net.URL;
 
 
 public class Main extends Application {
@@ -38,11 +37,8 @@ public class Main extends Application {
     }
 
     public static void showMainView() throws IOException {
-        FXMLLoader loader = new FXMLLoader();
-        URL url = new URL(userDir + "\\resources\\fxml\\MainFrame.fxml");
+        FXMLLoader loader = new FXMLLoader(Main.class.getResource("MainFrame.fxml"));
         primaryStage.setTitle("Flight App - Menu");
-        System.out.println(url.getFile());
-        loader.setLocation(url);
         Parent mainLayout = loader.load();
         Scene scene = new Scene(mainLayout,960, 584);
         primaryStage.setScene(scene);
@@ -54,10 +50,8 @@ public class Main extends Application {
      * @throws IOException
      */
     public static void showFlightInformationView(ObservableList<Flight> observableList) throws IOException{
-        FXMLLoader loader = new FXMLLoader();
-        URL url = new URL(userDir + "\\resources\\fxml\\FlightInformationFrame.fxml");
+        FXMLLoader loader = new FXMLLoader(Main.class.getResource("FlightInformationFrame.fxml"));
         primaryStage.setTitle("Flight App - Flight Information");
-        loader.setLocation(url);
         Parent root = loader.load();
         Scene scene = new Scene(root, 960, 585);
         primaryStage.setScene(scene);
@@ -70,9 +64,7 @@ public class Main extends Application {
     }
 
     public static void showMapView() throws Exception {
-        FXMLLoader loader = new FXMLLoader();
-        URL url = new URL(userDir + "\\resources\\fxml\\GMaps.fxml");
-        loader.setLocation(url);
+        FXMLLoader loader = new FXMLLoader(Main.class.getResource("GMaps.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root, 960, 585);
         Stage mapWindow = new Stage();

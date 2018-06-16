@@ -1,4 +1,4 @@
-package main.java.FlightInformation;
+package FlightInformation;
 
 import com.lynden.gmapsfx.GoogleMapView;
 import com.lynden.gmapsfx.MapComponentInitializedListener;

@@ -1,6 +1,6 @@
-package main.java.FlightAPI;
+package FlightAPI;
 
-import main.java.Data.Converter.IANACodeConverter;
+import Data.Converter.IANACodeConverter;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;

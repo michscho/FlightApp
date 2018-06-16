@@ -1,12 +1,11 @@
-package main.java.MainScreen;
+package MainScreen;
 
-
-import main.java.Data.Classes.Flight;
-import main.java.Data.Classes.User;
-import main.java.Data.Converter.IANACodeConverter;
-import main.java.FlightAPI.Request;
-import main.java.FlightAPI.XMLReader;
-import main.java.Login.UserLogin;
+import Data.Classes.Flight;
+import Data.Classes.User;
+import Data.Converter.IANACodeConverter;
+import FlightAPI.Request;
+import FlightAPI.XMLReader;
+import Login.UserLogin;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -23,7 +22,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
-import static main.java.FlightAPI.RequestBuilder.buildRequest;
+import static FlightAPI.RequestBuilder.buildRequest;
 
 
 public class MainController implements Initializable {

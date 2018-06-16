@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="585.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.FlightInformation.GMapsController">
+<AnchorPane prefHeight="585.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FlightInformation.GMapsController">
    <children>
       <AnchorPane prefHeight="585.0" prefWidth="847.0">
          <children>

@@ -1,4 +1,4 @@
-package main.java.Data.Database;
+package Data.Database;
 
 public class DataManager {
 

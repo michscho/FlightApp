@@ -24,7 +24,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox prefHeight="601.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.FlightInformation.FlightInformationController">
+<VBox prefHeight="601.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FlightInformation.FlightInformationController">
     <children>
         <MenuBar prefWidth="934.0" VBox.vgrow="NEVER">
             <menus>
@@ -88,12 +88,12 @@
                   </Text>
                   <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="84.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../pictures/man-user.png" />
+                        <Image url="@../Pictures/man-user.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="47.0" fitWidth="21.0" layoutX="49.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../pictures/plane.png" />
+                        <Image url="@../Pictures/plane.png" />
                      </image>
                   </ImageView>
                   <Text layoutX="49.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MUC-BER" textAlignment="CENTER" wrappingWidth="124.4700698852539">
@@ -108,7 +108,7 @@
                   </Text>
                   <ImageView fitHeight="47.0" fitWidth="21.0" layoutX="28.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../pictures/icon.png" />
+                        <Image url="@../Pictures/icon.png" />
                      </image>
                   </ImageView>
                   <Text layoutX="29.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Flight is in 50min" wrappingWidth="193.4700698852539">
@@ -255,17 +255,17 @@
                                           </Text>
                                           <ImageView fitHeight="44.0" fitWidth="47.0" layoutX="33.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../pictures/weather/sunny.gif" />
+                                                <Image url="@../Pictures/Weather/sunny.gif" />
                                              </image>
                                           </ImageView>
                                           <ImageView fitHeight="44.0" fitWidth="47.0" layoutX="164.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../pictures/weather/nt_rain.gif" />
+                                                <Image url="@../Pictures/Weather/nt_rain.gif" />
                                              </image>
                                           </ImageView>
                                           <ImageView fitHeight="44.0" fitWidth="47.0" layoutX="295.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../pictures/weather/nt_tstorms.gif" />
+                                                <Image url="@../Pictures/Weather/nt_tstorms.gif" />
                                              </image>
                                           </ImageView>
                                           <Separator layoutX="22.0" layoutY="59.0" prefHeight="0.0" prefWidth="342.0" />
@@ -288,7 +288,7 @@
                                           </Text>
                                           <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="18.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../pictures/flightStatus/flightStatusOK.png" />
+                                                <Image url="@../Pictures/FlightStatus/flightStatusOK.png" />
                                              </image>
                                           </ImageView>
                                           <Text layoutX="26.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" wrappingWidth="46.66661846637726">

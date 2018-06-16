@@ -25,7 +25,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.MainScreen.MainController">
+<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainScreen.MainController">
   <children>
     <MenuBar prefWidth="934.0" VBox.vgrow="NEVER">
       <menus>
@@ -89,12 +89,12 @@
                   </Text>
                   <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="84.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
                       <image>
-                          <Image url="@../pictures/man-user.png" />
+                          <Image url="@../Pictures/man-user.png" />
                       </image>
                   </ImageView>
                   <ImageView fitHeight="47.0" fitWidth="21.0" layoutX="49.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
                       <image>
-                          <Image url="@../pictures/plane.png" />
+                          <Image url="@../Pictures/plane.png" />
                       </image>
                   </ImageView>
                   <Text layoutX="49.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MUC-BER" textAlignment="CENTER" wrappingWidth="124.4700698852539">
@@ -109,7 +109,7 @@
                   </Text>
                   <ImageView fitHeight="47.0" fitWidth="21.0" layoutX="28.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
                       <image>
-                          <Image url="@../pictures/icon.png" />
+                          <Image url="@../Pictures/icon.png" />
                       </image>
                   </ImageView>
                   <Text layoutX="29.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Flight is in 50min" wrappingWidth="193.4700698852539">
