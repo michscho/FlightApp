@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c9be3f2-5a86-4c3d-b617-0fb7d2166385" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/main/java/Data/Converter/IANACodeConverterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FlightApp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/resources/Data/Converter/AirportToIANACode.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Data/Converter/AirportToIANACode.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/resources/Libs/controlsfx-9.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Libs/controlsfx-9.0.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/resources/Libs/logback-classic-1.2.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Libs/logback-classic-1.2.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/resources/Libs/logback-core-1.2.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Libs/logback-core-1.2.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/resources/Libs/ostermillerutils-1.08.02.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Libs/ostermillerutils-1.08.02.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/resources/Libs/slf4j-api-1.7.23.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Libs/slf4j-api-1.7.23.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/resources/MainScreen/GMaps.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/MainScreen/GMaps.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/resources/MainScreen/MainFrame.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/MainScreen/MainFrame.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,7 +18,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IANACodeConverterTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IANACodeConverterTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/main/java/Data/Converter/IANACodeConverterTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -40,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="85">
+              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -121,10 +111,10 @@
         <option value="$PROJECT_DIR$/src/Main/resources/MainScreen/GMaps.fxml" />
         <option value="$PROJECT_DIR$/src/Main/java/FlightInformation/FlightInformationController.java" />
         <option value="$PROJECT_DIR$/src/Main/java/MainScreen/Main.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/main/Data/Converter/IANACodeConverterTest.java" />
         <option value="$PROJECT_DIR$/src/test/main/java/Converter/IANACodeConverterTest.java" />
         <option value="$PROJECT_DIR$/src/test/main/java/Data/Converter/IANACodeConverterTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -246,18 +236,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="Data" />
       <recent name="test.java.Converter" />
       <recent name="test.java" />
       <recent name="main.java" />
-      <recent name="main.java.Util" />
-      <recent name="Data.Converter" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Michael Schott\Google Drive\Uni - 4. Semester\Projektorganisation und -managment in der Softwaretechnik\meine Unterlagen\ProjectFlightApp\app\FlightApp\src\test\main" />
+      <recent name="C:\Users\Michael Schott\Google Drive\Uni - 4. Semester\Projektorganisation und -managment in der Softwaretechnik\meine Unterlagen\ProjectFlightApp\app\FlightApp\src\test" />
       <recent name="C:\Users\Michael Schott\Google Drive\Uni - 4. Semester\Projektorganisation und -managment in der Softwaretechnik\meine Unterlagen\ProjectFlightApp\app\FlightApp\src\test\java" />
       <recent name="C:\Users\Michael Schott\Google Drive\Uni - 4. Semester\Projektorganisation und -managment in der Softwaretechnik\meine Unterlagen\ProjectFlightApp\app\FlightApp\src\Main\resources\MainScreen" />
       <recent name="C:\Users\Michael Schott\Google Drive\Uni - 4. Semester\Projektorganisation und -managment in der Softwaretechnik\meine Unterlagen\ProjectFlightApp\app\FlightApp\src\Main\resources\FlightInformationController" />
-      <recent name="C:\Users\Michael Schott\Google Drive\Uni - 4. Semester\Projektorganisation und -managment in der Softwaretechnik\meine Unterlagen\ProjectFlightApp\app\FlightApp\src\Main\resources\FlightAPI" />
-      <recent name="C:\Users\Michael Schott\Google Drive\Uni - 4. Semester\Projektorganisation und -managment in der Softwaretechnik\meine Unterlagen\ProjectFlightApp\app\FlightApp\src\Main\resources\Data\Converter" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -455,7 +445,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529158252214</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="changed test-structure">
+      <created>1529413938918</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1529413938918</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -495,6 +492,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1455" height="935" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49964157" weight="0.32919255" />
@@ -614,7 +612,8 @@
     <MESSAGE value="basic GMap implemenation" />
     <MESSAGE value="structur changes" />
     <MESSAGE value="data list adding" />
-    <option name="LAST_COMMIT_MESSAGE" value="data list adding" />
+    <MESSAGE value="changed test-structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed test-structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -890,13 +889,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/main/java/Data/Converter/IANACodeConverterTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -904,6 +896,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
         </state>
       </provider>
     </entry>
