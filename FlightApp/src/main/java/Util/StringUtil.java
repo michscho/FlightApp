@@ -16,8 +16,4 @@ public class StringUtil {
         return list.toArray(new String[0]);
     }
 
-    public static int test(){
-        return -1;
-    }
-
 }
