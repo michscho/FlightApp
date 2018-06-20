@@ -9,8 +9,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class IANACodeConverterTest {
 
-
-
         @Test
         public void testGetIANACodeBasic() throws IOException {
             assertEquals("FRA", IANACodeConverter.getIANACode("Frankfurt")) ;
