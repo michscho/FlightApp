@@ -64,26 +64,22 @@ public class DataManager {
         return false;
     }
 
-    // TODO @Leon
-    // Frage: wie erstellt man einen Account?
-    // Es soll ja nicht pro Login ein Account erstellt werden
     public static void safeUserData(String userName, String password) {
         connector("insert into User Values (NULL, '"+userName+"', '"+password+"');", false);
     }
 
-    // TODO @Leon
-    // was soll gespeichert werden?
-    // -> siehe Classes.Flight
     public static void safeFlightData(String destination, String departure, String departureTime, double duration) {
         connector("insert into FlightInfo Values (NULL, '"+destination+"', '"+departure+"', '"+departureTime+"', "+duration+");", false);
     }
 
-    // TODO @Leon
+    // TODO @Michi, ich weiß nicht wie du das in der Main ingebunden hast und wenn ich
+    // TODO rausnehme dann gibt es einen error, das also bei dir bitte anpassen
+    // TODO die äquivalente mathode dazu ist *checkPassword*
+
     public static String[] loadUserData() {
         return null;
     }
 
-    // TODO @Leon
     public static ArrayList<String[]> flightData(String username) throws Exception{
 
         ResultSet rs = null;
@@ -116,12 +112,6 @@ public class DataManager {
     //TODO: @Michi
     public static String[] loadFlightData() {
         return null;
-    }
-
-
-    public static void main(String[] args) throws Exception{
-
-
     }
 
 }
