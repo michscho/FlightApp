@@ -3,13 +3,12 @@ package Util;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class StringUtilTest {
 
 
         @Test
-        public void testStringUtil() throws Exception{
+        public void testStringUtil(){
 
             String[] exp = new String[1];
             exp[0] = "test";

@@ -6,13 +6,12 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static junit.framework.TestCase.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class XMLReaderTest {
 
     @Test
-    public void readInputTest() throws Exception {
+    public void testReadInput() throws Exception {
         Main.developerModus = true;
         List<Flight> list = XMLReader.readInput(Request.request(""));
         Flight flight = list.get(0);
