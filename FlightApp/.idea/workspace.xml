@@ -3,7 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="0c9be3f2-5a86-4c3d-b617-0fb7d2166385" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FlightAPI/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FlightAPI/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainScreen/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainScreen/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/MainScreen/MainFrame.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/MainScreen/MainFrame.fxml" afterDir="false" />
+    </list>
+    <list id="7b4876c5-49b1-4763-bbf5-2f2d9e578e6a" name="clipboardPatchFile" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data/Converter/DateConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/Converter/DateConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Util/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Util/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Data/Converter/IANACodeConverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Data/Converter/IANACodeConverterTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,9 +24,9 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="IANACodeConverterTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/main/java/Data/Converter/IANACodeConverterTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Data/Converter/IANACodeConverterTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
               <caret line="1" selection-start-line="1" selection-end-line="1" />
@@ -30,11 +37,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+            <state relative-caret-position="289">
+              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DateConverter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Data/Converter/DateConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MainScreen/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Request.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/FlightAPI/Request.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -92,7 +126,6 @@
         <option value="$PROJECT_DIR$/src/main/java/FlightInformation/FlightInformationController.java" />
         <option value="$PROJECT_DIR$/src/test/java/Data/Converter/IANACodeConverterTest.java" />
         <option value="$PROJECT_DIR$/test/main/java/Util/Data/Converter/IANACodeConverterTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MainScreen/Main.java" />
         <option value="$PROJECT_DIR$/src/Main/java/Util/StringUtil.java" />
         <option value="$PROJECT_DIR$/src/Main/java/Login/UserLogin.java" />
         <option value="$PROJECT_DIR$/src/Main/java/FlightInformation/GMapsController.java" />
@@ -115,6 +148,8 @@
         <option value="$PROJECT_DIR$/src/test/main/java/Converter/IANACodeConverterTest.java" />
         <option value="$PROJECT_DIR$/src/test/main/java/Data/Converter/IANACodeConverterTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/MainScreen/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/FlightAPI/Request.java" />
       </list>
     </option>
   </component>
@@ -135,7 +170,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
+    <option name="x" value="424" />
+    <option name="y" value="-17" />
     <option name="width" value="1101" />
     <option name="height" value="1392" />
   </component>
@@ -145,8 +181,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -163,6 +197,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -185,20 +220,6 @@
               <item name="FlightApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="FlightApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FlightApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FlightApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FlightApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FlightApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -206,20 +227,72 @@
               <item name="FlightApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="FlightApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlightApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlightApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Data" type="462c0819:PsiDirectoryNode" />
               <item name="Converter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FlightApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="FlightApp" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="MainScreen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlightApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlightApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlightApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlightApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="MainScreen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlightApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlightApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlightApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlightApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlightApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlightApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Converter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlightApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -243,8 +316,8 @@
       <recent name="main.java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Michael Schott\Google Drive\Uni - 4. Semester\Projektorganisation und -managment in der Softwaretechnik\meine Unterlagen\ProjectFlightApp\app\FlightApp\src\test\main" />
       <recent name="C:\Users\Michael Schott\Google Drive\Uni - 4. Semester\Projektorganisation und -managment in der Softwaretechnik\meine Unterlagen\ProjectFlightApp\app\FlightApp\src\test" />
+      <recent name="C:\Users\Michael Schott\Google Drive\Uni - 4. Semester\Projektorganisation und -managment in der Softwaretechnik\meine Unterlagen\ProjectFlightApp\app\FlightApp\src\test\main" />
       <recent name="C:\Users\Michael Schott\Google Drive\Uni - 4. Semester\Projektorganisation und -managment in der Softwaretechnik\meine Unterlagen\ProjectFlightApp\app\FlightApp\src\test\java" />
       <recent name="C:\Users\Michael Schott\Google Drive\Uni - 4. Semester\Projektorganisation und -managment in der Softwaretechnik\meine Unterlagen\ProjectFlightApp\app\FlightApp\src\Main\resources\MainScreen" />
       <recent name="C:\Users\Michael Schott\Google Drive\Uni - 4. Semester\Projektorganisation und -managment in der Softwaretechnik\meine Unterlagen\ProjectFlightApp\app\FlightApp\src\Main\resources\FlightInformationController" />
@@ -418,6 +491,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="0c9be3f2-5a86-4c3d-b617-0fb7d2166385" name="Default" comment="" />
+      <changelist id="7b4876c5-49b1-4763-bbf5-2f2d9e578e6a" name="clipboardPatchFile" comment="" />
       <created>1528370127857</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -452,7 +526,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529413938918</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changed test-structure, deleted Main in test">
+      <created>1529414465887</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1529414465887</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -499,20 +580,20 @@
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.10107527" side_tool="true" visible="true" weight="0.51314145" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.10681003" side_tool="true" visible="true" weight="0.0387985" />
       <window_info anchor="right" id="Maven Projects" order="4" visible="true" weight="0.2" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.89318997" weight="0.41051313" />
       <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49964157" weight="0.3279099" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8989247" visible="true" weight="0.51314145" />
-      <window_info anchor="bottom" id="Terminal" order="13" weight="0.32916147" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49605736" weight="0.32916147" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2702509" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.29175627" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39875776" />
+      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="right" id="JetGradle" order="5" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.3279503" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -613,7 +694,8 @@
     <MESSAGE value="structur changes" />
     <MESSAGE value="data list adding" />
     <MESSAGE value="changed test-structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed test-structure" />
+    <MESSAGE value="changed test-structure, deleted Main in test" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed test-structure, deleted Main in test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -621,13 +703,17 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FlightInformation/FlightInformationController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1547">
           <caret line="91" column="7" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -635,9 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -820,13 +903,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Data/Converter/DateConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Data/Database/DataManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -855,23 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FlightAPI/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="29" column="74" selection-start-line="29" selection-start-column="74" selection-end-line="29" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MainScreen/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/Data/Converter/AirportToIANACode.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -883,13 +942,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="91" column="7" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/main/java/Data/Converter/IANACodeConverterTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Data/Converter/IANACodeConverterTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
@@ -899,10 +955,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MainScreen/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FlightAPI/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        <state relative-caret-position="289">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Data/Converter/DateConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>

@@ -20,7 +20,7 @@ import java.net.URL;
 public class Request {
 
     // get this token at https://developer.lufthansa.com/io-docs
-    private static final String token = "bwhj6dfr93b3cyb4tctdbjzm";
+    private static final String token = "gjhb2mun39hz9z5z9zrucqmt";
 
      public static String request(String request) throws Exception {
          // In developerModues you don't send any request to Lufthansa

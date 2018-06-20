@@ -17,7 +17,7 @@ import java.io.IOException;
 
 public class Main extends Application {
 
-    public final static boolean developerModus = true;
+    public final static boolean developerModus = false;
 
     private final static String userDir = "file:///" + System.getProperty("user.dir") + "\\main\\java";
 
