@@ -14,7 +14,7 @@ public class StringUtilTest {
             ArrayList<String> tmp = new ArrayList<String>();
             tmp.add("1");
 
-            String[][] tmp2 = new String[5][1];
+            String[][] tmp2 = new String[1][1];
             tmp2[0][0] = "1";
 
            assertEquals(tmp, StringUtil.flatten(tmp2));
