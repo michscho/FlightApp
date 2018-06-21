@@ -3,6 +3,7 @@ package FlightInformation;
 import Data.Classes.Flight;
 import Data.Converter.IANACodeConverter;
 import Data.Database.DataManager;
+import Login.LoginController;
 import MainScreen.Main;
 import javafx.application.Platform;
 import javafx.collections.ObservableList;
@@ -15,6 +16,7 @@ import javafx.scene.control.TreeView;
 import javafx.scene.image.Image;
 import javafx.scene.text.Text;
 
+import javax.xml.crypto.Data;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -87,6 +89,17 @@ public class FlightInformationController implements Initializable {
         arrival.setText(IANACodeConverter.IANAToCity(observableList.get(0).getEndAirportC()));
     }
 
+    public void bookFlightClicked() {
+        DataManager.safeFlightData(destination.getText(),arrival.getText(),departureTime.getText(),-1.,-1,"na");
+        DataManager.safeBookedFlights(2,2,-1,-1,"",-1);
+
+    }
+
+    public void favoriteFlightClicked() {
+        DataManager.safeFlightData(destination.getText(),arrival.getText(),departureTime.getText(),2.,-1,"na");
+        DataManager.safeBookedFlights(2,2,-1,-1,"favourited",-1);
+    }
+
 
     public void toMenuButton() throws IOException {
         Main.showMainView();
@@ -96,21 +109,20 @@ public class FlightInformationController implements Initializable {
         Main.showMapView();
     }
 
-    public void setTreeView() {
-        if (DataManager.loadFlightData() == null && Main.developerModus == false) {
-            treeView.setVisible(false);
-            mapButton.setVisible(false);
-            rateButton.setVisible(false);
-            requestButton.setVisible(false);
-            cancelButton.setVisible(false);
-            page.setVisible(false);
+    public void setTreeView() throws Exception {
+        if (DataManager.flightData(LoginController.globalUserName).size() == 0) {
+                treeView.setVisible(false);
+                mapButton.setVisible(false);
+                rateButton.setVisible(false);
+                requestButton.setVisible(false);
+                cancelButton.setVisible(false);
+                page.setVisible(false);
         } else {
             text.setVisible(false);
         }
 
-
         TreeViewHelper helper = new TreeViewHelper();
-        ArrayList<TreeItem> data = helper.getData();
+        ArrayList<TreeItem> data = helper.getData(DataManager.flightData(LoginController.globalUserName).get(page.getCurrentPageIndex()));
 
         TreeItem treeItemRoot = new TreeItem("Flight:");
         treeItemRoot.getChildren().addAll(data);
@@ -123,6 +135,10 @@ public class FlightInformationController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        setTreeView();
+        try {
+            setTreeView();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

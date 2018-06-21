@@ -5,7 +5,6 @@ import Data.Classes.User;
 import Data.Converter.IANACodeConverter;
 import FlightAPI.Request;
 import FlightAPI.XMLReader;
-import Login.UserLogin;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -164,12 +163,6 @@ public class MainController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        // You shouln't login twice
-        if (!alreadyOpended && Main.developerModus == false) {
-            UserLogin userLogin = new UserLogin();
-            userLogin.createUserLogin();
-            alreadyOpended = true;
-        }
         setUsername();
         setDate();
         try {
