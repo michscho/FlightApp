@@ -10,6 +10,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 
 import java.io.IOException;
@@ -17,7 +18,7 @@ import java.io.IOException;
 
 public class Main extends Application {
 
-    public static boolean developerModus = false;
+    public static boolean developerModus = true;
 
     private final static String userDir = "file:///" + System.getProperty("user.dir") + "\\main\\java";
 
@@ -31,7 +32,6 @@ public class Main extends Application {
         }
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("Flight App");
-        this.primaryStage.getIcons().add(new Image( userDir + "\\resources\\pictures\\plane.png"));
         showMainView();
 
     }
@@ -43,6 +43,7 @@ public class Main extends Application {
         Scene scene = new Scene(mainLayout,960, 584);
         primaryStage.setScene(scene);
         primaryStage.show();
+        primaryStage.setResizable(true);
     }
 
     /**

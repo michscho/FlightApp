@@ -9,15 +9,19 @@ public class TreeViewHelper
     {
     }
 
+    private String[] flightData;
+
     // This method creates an ArrayList of TreeItems (data)
-    public ArrayList<TreeItem> getData()
+    public ArrayList<TreeItem> getData(String[] flightData)
     {
+        this.flightData = flightData;
+
         ArrayList<TreeItem> data = new ArrayList<TreeItem>();
 
         TreeItem schedule = new TreeItem("Schedule");
         schedule.getChildren().addAll(getSchedule());
 
-        TreeItem destination = new TreeItem("Destination");
+        TreeItem destination = new TreeItem("Destination:");
         destination.getChildren().addAll(getDestination());
 
         TreeItem numberOfStops = new TreeItem("Number of Stops");
@@ -45,7 +49,7 @@ public class TreeViewHelper
         ArrayList<TreeItem> schedule = new ArrayList<TreeItem>();
 
         TreeItem day = new TreeItem("Day");
-        TreeItem departure = new TreeItem("Departure");
+        TreeItem departure = new TreeItem("Departure: " + flightData[3]);
         TreeItem arrival = new TreeItem("Arrival");
         TreeItem duration = new TreeItem("Duration");
 
@@ -61,8 +65,8 @@ public class TreeViewHelper
     {
         ArrayList<TreeItem> destination = new ArrayList<TreeItem>();
 
-        TreeItem departure = new TreeItem("Departure");
-        TreeItem arrival = new TreeItem("Arrival");
+        TreeItem departure = new TreeItem("Departure: " + flightData[2]);
+        TreeItem arrival = new TreeItem("Arrival: " + flightData[1]);
 
         destination.add(departure);
         destination.add(arrival);
@@ -74,11 +78,9 @@ public class TreeViewHelper
     {
         ArrayList<TreeItem> schedule = new ArrayList<TreeItem>();
 
-        TreeItem departure = new TreeItem("Departure");
-        TreeItem arrival = new TreeItem("Arrival");
+        TreeItem departure = new TreeItem("NumberOfStops: " + flightData[5]);
 
         schedule.add(departure);
-        schedule.add(arrival);
 
         return schedule;
     }
@@ -91,9 +93,9 @@ public class TreeViewHelper
 
         // TODO
         if (true) {
-             ecoOrBuis = new TreeItem("Economy");
+             ecoOrBuis = new TreeItem("Economy ");
         }
-         ecoOrBuis = new TreeItem("Business");
+         ecoOrBuis = new TreeItem("Business ");
 
         price.add(ecoOrBuis);
 
@@ -105,9 +107,9 @@ public class TreeViewHelper
         ArrayList<TreeItem> information = new ArrayList<TreeItem>();
 
         /// Current Status: Favorite <-> Open <-> Booked <-> Flought
-        TreeItem status = new TreeItem("Current Status");
-        TreeItem requestedServices = new TreeItem("Requested Services");
-        TreeItem review = new TreeItem("Review:");
+        TreeItem status = new TreeItem("Current Status: " + flightData[9]);
+        TreeItem requestedServices = new TreeItem("Requested Services: ");
+        TreeItem review = new TreeItem("Review: " + flightData[8]);
 
         information.add(status);
         information.add(requestedServices);
