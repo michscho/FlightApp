@@ -2,30 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c9be3f2-5a86-4c3d-b617-0fb7d2166385" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Libs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Libs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FlightApp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlightApp/Data/Converter/AirportToIANACode.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlightApp/FlightAPI/sampleResponse.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlightApp/Libs/GMapsFX-2.12.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlightApp/Libs/controlsfx-9.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlightApp/Libs/logback-classic-1.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlightApp/Libs/logback-core-1.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlightApp/Libs/ostermillerutils-1.08.02.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlightApp/Libs/slf4j-api-1.7.23.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlightApp/MainScreen/GMaps.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlightApp/Pictures/FlightStatus/flightStatusNOK.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlightApp/Pictures/FlightStatus/flightStatusOK.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlightApp/Pictures/Weather/cloudy.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlightApp/Pictures/Weather/nt_rain.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlightApp/Pictures/Weather/nt_tstorms.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlightApp/Pictures/Weather/partlysunny.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlightApp/Pictures/Weather/sunny.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlightApp/Pictures/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlightApp/Pictures/man-user.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlightApp/Pictures/plane.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlightApp/Pictures/userlogin.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
+            <state relative-caret-position="790">
+              <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -59,7 +35,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserLoginFrame.fxml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserLoginFrame.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/resources/Login/UserLoginFrame.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
@@ -181,8 +157,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Data/Database/DataManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/FlightInformation/TreeViewHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/FlightInformation/FlightInformationController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/Main/resources/Login/UserLoginFrame.fxml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -539,7 +515,7 @@
       <option name="presentableId" value="Default" />
       <updated>1528370127857</updated>
       <workItem from="1528370129640" duration="3376000" />
-      <workItem from="1529582758517" duration="2415000" />
+      <workItem from="1529582758517" duration="2533000" />
     </task>
     <task id="LOCAL-00001" summary="basic GMap implemenation">
       <created>1528800128324</created>
@@ -654,7 +630,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5791000" />
+    <option name="totallyTimeSpent" value="5909000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1070,13 +1046,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/java/Login/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -1099,6 +1068,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
           <caret line="34" column="88" selection-start-line="34" selection-start-column="88" selection-end-line="34" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="790">
+          <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
         </state>
       </provider>
     </entry>
