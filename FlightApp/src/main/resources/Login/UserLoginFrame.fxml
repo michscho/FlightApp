@@ -32,7 +32,7 @@
                   <Font size="21.0" />
                </font>
             </Text>
-            <Hyperlink fx:id="forgetPassword" layoutX="48.0" layoutY="290.0" text="Forget Password?" textFill="#25218c" underline="true" />
+            <Hyperlink fx:id="forgetPassword" layoutX="48.0" layoutY="290.0" text="Forgot Password?" textFill="#25218c" underline="true" />
             <JFXTextField fx:id="username" layoutX="32.0" layoutY="93.0" promptText="username" />
             <JFXPasswordField fx:id="password" layoutX="32.0" layoutY="153.0" promptText="password" />
             <JFXButton fx:id="sign" layoutX="72.0" layoutY="229.0" onAction="#signInPressed" style="-fx-background-color: rgba(100,100,100);" text="Sign In" />
