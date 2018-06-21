@@ -73,11 +73,11 @@ public class DataManager {
 
     public static void safeFlightData(String destination, String departure, String departureTime, double duration, int numOfStops, String gate) {
         connector("INSERT INTO FlightInfo VALUES (NULL, '"+destination+"', '"+departure+"', '"+departureTime+
-                "', "+duration+", "+numOfStops+", "+gate+");", false);
+                "', "+duration+", "+numOfStops+", '"+gate+"');", false);
     }
 
     public static void safeBookedFlights(int flightid, int userid, int ecoBus, int review, String currentStatus, double price){
-        connector("INSERT INTO BookedFlights VALUES (NULL, "+flightid+", "+userid+", "+ecoBus+", "+review+", "+currentStatus+", "+price+");", false);
+        connector("INSERT INTO BookedFlights VALUES (NULL, "+flightid+", "+userid+", "+ecoBus+", "+review+", '"+currentStatus+"', "+price+");", false);
     }
 
     /**
