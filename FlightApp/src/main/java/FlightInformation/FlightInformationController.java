@@ -145,21 +145,20 @@ public class FlightInformationController implements Initializable {
             e.printStackTrace();
         }
 //        weatherToday.setImage();
-        CityConverter cc = new CityConverter(destination.getText());
         WeatherRequest wr = new WeatherRequest(destination.getText());
 
         String imageWeatherToday = "";
         String imageWeatherIn1Day = "";
         String imageWeatherIn2Days = "";
         try {
-            imageWeatherToday = wr.currentWeather();
+//            imageWeatherToday = wr.currentWeather();
 //            imageWeatherIn1Day = wr.weatherForecast(8);
 //            imageWeatherIn2Days = wr.weatherForecast(16);
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        Image i1 = new Image("http://openweathermap.org/img/w/" + imageWeatherToday + ".png");
-        weatherToday.setImage(i1);
+//        Image i1 = new Image("http://openweathermap.org/img/w/" + imageWeatherToday + ".png");
+//        weatherToday.setImage(i1);
     }
 }
