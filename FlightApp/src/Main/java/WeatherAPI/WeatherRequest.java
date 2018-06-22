@@ -28,8 +28,8 @@ public class WeatherRequest {
             e.printStackTrace();
         }
 
-        Image image = new Image("http://openweathermap.org/img/w/" + tmp + ".png");
-        System.out.println("Image URL: " + image.getUrl());
+//        Image image = new Image("http://openweathermap.org/img/w/" + tmp + ".png");
+//        System.out.println("Image URL: " + image.getUrl());
     }
 
     public String urlBuilder (String url) throws Exception {
