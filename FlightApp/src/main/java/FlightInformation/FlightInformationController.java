@@ -18,6 +18,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -42,14 +43,18 @@ public class FlightInformationController implements Initializable {
     private TreeView treeView;
 
     @FXML
-    private Image wheather_today; // TODO
+    private Image wheather_today;
     @FXML
-    private Image wheather_tomorrow; // TODO
+    private Image wheather_tomorrow;
     @FXML
-    private Image wheather_future; // TODO
+    private Image wheather_future;
 
     @FXML
     private ImageView weatherToday;
+    @FXML
+    private ImageView weatherTomorrow;
+    @FXML
+    private ImageView weatherFuture;
 
     @FXML
     private Button cancelButton;
@@ -151,14 +156,25 @@ public class FlightInformationController implements Initializable {
         String imageWeatherIn1Day = "";
         String imageWeatherIn2Days = "";
         try {
-//            imageWeatherToday = wr.currentWeather();
-//            imageWeatherIn1Day = wr.weatherForecast(8);
-//            imageWeatherIn2Days = wr.weatherForecast(16);
+            imageWeatherToday = wr.currentWeather();
+            imageWeatherIn1Day = wr.weatherForecast(8);
+            imageWeatherIn2Days = wr.weatherForecast(16);
         } catch (Exception e) {
             e.printStackTrace();
         }
 
 //        Image i1 = new Image("http://openweathermap.org/img/w/" + imageWeatherToday + ".png");
-//        weatherToday.setImage(i1);
+        File todayFile = new File("src/Main/resources/Pictures/weather2/" + imageWeatherToday + ".png");
+        Image image1 = new Image(todayFile.toURI().toString());
+        weatherToday.setImage(image1);
+
+        File tomorrowFile = new File("src/Main/resources/Pictures/weather2/" + imageWeatherIn1Day + ".png");
+        Image image2 = new Image(tomorrowFile.toURI().toString());
+        weatherTomorrow.setImage(image2);
+
+        File futureFile = new File("src/Main/resources/Pictures/weather2/" + imageWeatherIn2Days + ".png");
+        Image image3 = new Image(futureFile.toURI().toString());
+        weatherFuture.setImage(image3);
+        // TODO: time fixes (espically reagareding night icons) and adding temperature
     }
 }
