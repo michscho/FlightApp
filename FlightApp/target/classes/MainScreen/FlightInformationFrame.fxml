@@ -258,12 +258,12 @@
                                                 <Image url="@../Pictures/Weather/sunny.gif" />
                                              </image>
                                           </ImageView>
-                                          <ImageView fitHeight="44.0" fitWidth="47.0" layoutX="164.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+                                          <ImageView fx:id="weatherTomorrow" fitHeight="44.0" fitWidth="47.0" layoutX="164.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
                                                 <Image url="@../Pictures/Weather/nt_rain.gif" />
                                              </image>
                                           </ImageView>
-                                          <ImageView fitHeight="44.0" fitWidth="47.0" layoutX="295.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+                                          <ImageView fx:id="weatherFuture" fitHeight="44.0" fitWidth="47.0" layoutX="295.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
                                                 <Image url="@../Pictures/Weather/nt_tstorms.gif" />
                                              </image>

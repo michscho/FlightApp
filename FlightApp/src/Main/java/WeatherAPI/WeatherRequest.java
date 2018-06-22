@@ -56,7 +56,7 @@ public class WeatherRequest {
     }
 
     public String weatherForecast (int index) throws Exception {
-        String url = urlBuilder("https://api.openweathermap.org/data/2.5/forecast?id=");
+        String url = urlBuilder("https://api.openweathermap.org/data/2.5/forecast?q=");
         JSONObject obj = new JSONObject(url);
 
         JSONObject res = obj.getJSONArray("list").getJSONObject(index); // 1 Day: index 8; 2 Days: index 16
