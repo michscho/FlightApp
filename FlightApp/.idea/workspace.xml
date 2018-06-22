@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c9be3f2-5a86-4c3d-b617-0fb7d2166385" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_json_20130603.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/java/WeatherAPI/JsonDecode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/java/WeatherAPI/WeatherRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FlightApp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/FlightApp-1.0-jar-with-dependencies.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/FlightApp-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Login/UserLoginFrame.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Login/UserLoginFrame.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Data.Converter.IANACodeConverterTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/FlightAPI.RequestTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/FlightAPI.XMLReaderTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Login.UserLoginTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-Data.Converter.IANACodeConverterTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-FlightAPI.RequestTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-FlightAPI.XMLReaderTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-Login.UserLoginTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-Util.StringUtilTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Util.StringUtilTest.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,7 +17,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FlightInformationFrame.fxml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FlightInformationFrame.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/resources/MainScreen/FlightInformationFrame.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
@@ -52,8 +30,8 @@
       <file leaf-file-name="WeatherRequest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/java/WeatherAPI/WeatherRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+            <state relative-caret-position="442">
+              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#624#625#0" expanded="true" />
@@ -66,20 +44,8 @@
       <file leaf-file-name="FlightInformationController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/java/FlightInformation/FlightInformationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="43" column="18" lean-forward="true" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JsonDecode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main/java/WeatherAPI/JsonDecode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="833">
+              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
             </state>
           </provider>
         </entry>
@@ -92,6 +58,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="748">
+              <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -127,9 +102,9 @@
       <find>youtb</find>
       <find>wheather</find>
       <find>#bookFlightClicked</find>
-      <find>bookFlightClicked</find>
       <find>click</find>
       <find>weather</find>
+      <find>bookFlightClicked</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -192,9 +167,9 @@
         <option value="$PROJECT_DIR$/src/main/java/FlightInformation/TreeViewHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/FlightInformation/FlightInformationController.java" />
         <option value="$PROJECT_DIR$/src/Main/resources/Login/UserLoginFrame.fxml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/Main/java/WeatherAPI/JsonDecode.java" />
         <option value="$PROJECT_DIR$/src/Main/java/WeatherAPI/WeatherRequest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -563,7 +538,7 @@
       <workItem from="1528370129640" duration="3376000" />
       <workItem from="1529582758517" duration="4600000" />
       <workItem from="1529609053536" duration="4212000" />
-      <workItem from="1529665646869" duration="13269000" />
+      <workItem from="1529665646869" duration="13433000" />
     </task>
     <task id="LOCAL-00001" summary="basic GMap implemenation">
       <created>1528800128324</created>
@@ -678,7 +653,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25457000" />
+    <option name="totallyTimeSpent" value="25621000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1035,13 +1010,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="12" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/controlsfx/controlsfx/9.0.0/controlsfx-9.0.0.jar!/org/controlsfx/glyphfont/FontAwesome.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -1103,6 +1071,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/resources/MainScreen/FlightInformationFrame.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="257" column="80" selection-start-line="257" selection-start-column="73" selection-end-line="257" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/java/WeatherAPI/JsonDecode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -1115,15 +1091,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/java/FlightInformation/FlightInformationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="43" column="18" lean-forward="true" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+        <state relative-caret-position="833">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/java/WeatherAPI/WeatherRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+        <state relative-caret-position="442">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#624#625#0" expanded="true" />
@@ -1132,11 +1108,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/resources/MainScreen/FlightInformationFrame.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="257" column="80" selection-start-line="257" selection-start-column="73" selection-end-line="257" selection-end-column="80" />
+        <state relative-caret-position="748">
+          <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
         </state>
       </provider>
     </entry>
