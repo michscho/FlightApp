@@ -5,6 +5,7 @@ import Data.Converter.IANACodeConverter;
 import Data.Database.DataManager;
 import Login.LoginController;
 import MainScreen.Main;
+import WeatherAPI.WeatherRequest;
 import javafx.application.Platform;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -14,9 +15,9 @@ import javafx.scene.control.Pagination;
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeView;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 
-import javax.xml.crypto.Data;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -41,11 +42,14 @@ public class FlightInformationController implements Initializable {
     private TreeView treeView;
 
     @FXML
-    private Image wheather_today;
+    private Image wheather_today; // TODO
     @FXML
-    private Image wheather_tomorrow;
+    private Image wheather_tomorrow; // TODO
     @FXML
-    private Image wheather_future;
+    private Image wheather_future; // TODO
+
+    @FXML
+    private ImageView weatherToday;
 
     @FXML
     private Button cancelButton;
@@ -140,5 +144,22 @@ public class FlightInformationController implements Initializable {
         } catch (Exception e) {
             e.printStackTrace();
         }
+//        weatherToday.setImage();
+        CityConverter cc = new CityConverter(destination.getText());
+        WeatherRequest wr = new WeatherRequest(destination.getText());
+
+        String imageWeatherToday = "";
+        String imageWeatherIn1Day = "";
+        String imageWeatherIn2Days = "";
+        try {
+            imageWeatherToday = wr.currentWeather();
+//            imageWeatherIn1Day = wr.weatherForecast(8);
+//            imageWeatherIn2Days = wr.weatherForecast(16);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        Image i1 = new Image("http://openweathermap.org/img/w/" + imageWeatherToday + ".png");
+        weatherToday.setImage(i1);
     }
 }
