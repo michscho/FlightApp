@@ -34,7 +34,7 @@
                         <configuration>
                             <archive>
                                 <manifest>
-                                    <mainClass>MainScreen.Main</mainClass>
+                                    <mainClass>Login.Login</mainClass>
                                 </manifest>
                             </archive>
                             <descriptorRefs>
