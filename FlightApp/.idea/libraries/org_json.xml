@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="org.json-20130603">
+  <library name="org.json">
     <CLASSES>
       <root url="jar://$USER_HOME$/Downloads/org.json-20130603.jar!/" />
     </CLASSES>
