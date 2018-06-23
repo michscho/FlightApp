@@ -57,6 +57,15 @@ public class FlightInformationController implements Initializable {
     private ImageView weatherFuture;
 
     @FXML
+    private Text tempToday;
+
+    @FXML
+    private Text tempTomorrow;
+
+    @FXML
+    private Text tempFuture;
+
+    @FXML
     private Button cancelButton;
     @FXML
     private Button requestButton;
@@ -159,6 +168,10 @@ public class FlightInformationController implements Initializable {
             imageWeatherToday = wr.currentWeather();
             imageWeatherIn1Day = wr.weatherForecast(8);
             imageWeatherIn2Days = wr.weatherForecast(16);
+
+            tempToday.setText(Integer.toString(wr.currentTemp()) + "°C");
+            tempTomorrow.setText(Integer.toString(wr.tempForecast(8)) + "°C");
+            tempFuture.setText(Integer.toString(wr.tempForecast(16)) + "°C");
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -175,6 +188,8 @@ public class FlightInformationController implements Initializable {
         File futureFile = new File("src/Main/resources/Pictures/weather2/" + imageWeatherIn2Days + ".png");
         Image image3 = new Image(futureFile.toURI().toString());
         weatherFuture.setImage(image3);
+
+
         // TODO: time fixes (espically reagareding night icons) and adding temperature
     }
 }
