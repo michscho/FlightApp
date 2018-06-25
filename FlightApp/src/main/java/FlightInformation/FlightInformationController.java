@@ -158,34 +158,33 @@ public class FlightInformationController implements Initializable {
         } catch (Exception e) {
             e.printStackTrace();
         }
-//        weatherToday.setImage();
+
+        // Weather Fetching
         WeatherRequest wr = new WeatherRequest(destination.getText());
 
-        String imageWeatherToday = "";
-        String imageWeatherIn1Day = "";
-        String imageWeatherIn2Days = "";
+        String[] icons = new String[3];
+        int[] temperatures = new int[3];
         try {
-            imageWeatherToday = wr.currentWeather();
-            imageWeatherIn1Day = wr.weatherForecast(8);
-            imageWeatherIn2Days = wr.weatherForecast(16);
-
-            tempToday.setText(Integer.toString(wr.currentTemp()) + "°C");
-            tempTomorrow.setText(Integer.toString(wr.tempForecast(8)) + "°C");
-            tempFuture.setText(Integer.toString(wr.tempForecast(16)) + "°C");
+            // get weather information
+            icons = wr.getIcon();
+            temperatures = wr.getTemp();
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-//        Image i1 = new Image("http://openweathermap.org/img/w/" + imageWeatherToday + ".png");
-        File todayFile = new File("src/Main/resources/Pictures/weather2/" + imageWeatherToday + ".png");
+        tempToday.setText(Integer.toString(temperatures[0])  + "°C");
+        tempTomorrow.setText(Integer.toString(temperatures[1])  + "°C");
+        tempFuture.setText(Integer.toString(temperatures[2])  + "°C");
+
+        File todayFile = new File("src/Main/resources/Pictures/weather2/" + icons[0] + ".png");
         Image image1 = new Image(todayFile.toURI().toString());
         weatherToday.setImage(image1);
 
-        File tomorrowFile = new File("src/Main/resources/Pictures/weather2/" + imageWeatherIn1Day + ".png");
+        File tomorrowFile = new File("src/Main/resources/Pictures/weather2/" + icons[1] + ".png");
         Image image2 = new Image(tomorrowFile.toURI().toString());
         weatherTomorrow.setImage(image2);
 
-        File futureFile = new File("src/Main/resources/Pictures/weather2/" + imageWeatherIn2Days + ".png");
+        File futureFile = new File("src/Main/resources/Pictures/weather2/" + icons[2] + ".png");
         Image image3 = new Image(futureFile.toURI().toString());
         weatherFuture.setImage(image3);
 
