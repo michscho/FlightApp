@@ -5,7 +5,7 @@ import org.json.JSONObject;
 import java.net.URL;
 import java.util.Scanner;
 
-public class WeatherRequest { // TODO: Array zurückgeben mit lediglich einem Request pro Aufruf
+public class WeatherRequest {
 
     private static final String APIKey = "39b1bc038434e7c0b3db7e4b96a6afb9";
     public String city;
@@ -14,13 +14,9 @@ public class WeatherRequest { // TODO: Array zurückgeben mit lediglich einem Re
         this.city = city;
     }
 
-    public static void main(String[] args) {
-        WeatherRequest wr = new WeatherRequest("München");
-        try {
-            System.out.println(wr.tempForecast(16));
-
-        } catch (Exception e) {
-            e.printStackTrace();
+    public void arrayToString (int[] arr) { // for testing
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println("Day " + i + ": " + Integer.toString(arr[i]));
         }
     }
 
@@ -39,38 +35,40 @@ public class WeatherRequest { // TODO: Array zurückgeben mit lediglich einem Re
         return output;
     }
 
-    public String currentWeather () throws Exception {
-        String url = urlBuilder("https://api.openweathermap.org/data/2.5/weather?q=");
-        JSONObject obj = new JSONObject(url);
-
-        JSONObject weather = obj.getJSONArray("weather").getJSONObject(0);
-        return weather.getString("icon");
-    }
-
-    public String weatherForecast (int index) throws Exception {
+    public String[] getIcon () throws Exception {
         String url = urlBuilder("https://api.openweathermap.org/data/2.5/forecast?q=");
         JSONObject obj = new JSONObject(url);
 
-        JSONObject res = obj.getJSONArray("list").getJSONObject(index); // 1 Day: index 8; 2 Days: index 16
-        return res.getJSONArray("weather").getJSONObject(0).getString("icon");
+        JSONObject today = obj.getJSONArray("list").getJSONObject(0); // Weather Today
+        JSONObject tomorrow = obj.getJSONArray("list").getJSONObject(8); // Weather tomorrow
+        JSONObject future = obj.getJSONArray("list").getJSONObject(16); // Weather in two days
+
+        String[] icons = new String[3];
+        icons[0] = today.getJSONArray("weather").getJSONObject(0).getString("icon");
+        icons[1] = tomorrow.getJSONArray("weather").getJSONObject(0).getString("icon");
+        icons[2] = future.getJSONArray("weather").getJSONObject(0).getString("icon");
+
+        return icons;
     }
 
-    public int currentTemp () throws Exception {
-        String url = urlBuilder("https://api.openweathermap.org/data/2.5/weather?q=");
-        JSONObject obj = new JSONObject(url);
-
-        JSONObject temp = obj.getJSONObject("main");
-        int kel = temp.getInt("temp");
-        return kel - 273;
-    }
-
-    public int tempForecast (int index) throws Exception {
+    public int[] getTemp () throws Exception {
         String url = urlBuilder("https://api.openweathermap.org/data/2.5/forecast?q=");
         JSONObject obj = new JSONObject(url);
 
-        JSONObject res = obj.getJSONArray("list").getJSONObject(index); // 1 Day: index 8; 2 Days: index 16
-        int kel = res.getJSONObject("main").getInt("temp");
-        return kel - 273;
+        JSONObject today = obj.getJSONArray("list").getJSONObject(0); // Temp Today
+        JSONObject tomorrow = obj.getJSONArray("list").getJSONObject(8); // Temp Tomorrow
+        JSONObject future = obj.getJSONArray("list").getJSONObject(16); // Temp in two days
+
+        int[] temperatures = new int[3];
+        temperatures[0] = tempConverter(today.getJSONObject("main").getInt("temp"));
+        temperatures[1] = tempConverter(tomorrow.getJSONObject("main").getInt("temp"));
+        temperatures[2] = tempConverter(future.getJSONObject("main").getInt("temp"));
+
+        return temperatures;
+    }
+
+    public int tempConverter(int kelvin) {
+        return kelvin - 273;
     }
 
 }
