@@ -43,13 +43,6 @@ public class FlightInformationController implements Initializable {
     private TreeView treeView;
 
     @FXML
-    private Image wheather_today;
-    @FXML
-    private Image wheather_tomorrow;
-    @FXML
-    private Image wheather_future;
-
-    @FXML
     private ImageView weatherToday;
     @FXML
     private ImageView weatherTomorrow;
@@ -168,7 +161,7 @@ public class FlightInformationController implements Initializable {
             // get weather information
             icons = wr.getIcon();
             temperatures = wr.getTemp();
-        } catch (Exception e) {
+        } catch (Exception e) { // TODO: What happens, when there is no internet connection?
             e.printStackTrace();
         }
 
@@ -189,6 +182,6 @@ public class FlightInformationController implements Initializable {
         weatherFuture.setImage(image3);
 
 
-        // TODO: time fixes (espically reagareding night icons) and adding temperature
+        // TODO: time fixes (especially regarding night icons) and adding temperature
     }
 }

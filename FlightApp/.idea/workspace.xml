@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c9be3f2-5a86-4c3d-b617-0fb7d2166385" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Hannes_Simon.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlightApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FlightApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/java/WeatherAPI/WeatherRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/java/WeatherAPI/WeatherRequest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,14 +25,14 @@
       <file leaf-file-name="WeatherRequest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/java/WeatherAPI/WeatherRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+            <state relative-caret-position="1122">
+              <caret line="66" column="1" lean-forward="true" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#336#337#0" expanded="true" />
-                <element signature="e#368#369#0" expanded="true" />
-                <element signature="e#3490#3491#0" expanded="true" />
-                <element signature="e#3525#3526#0" expanded="true" />
+                <element signature="e#270#271#0" expanded="true" />
+                <element signature="e#302#303#0" expanded="true" />
+                <element signature="e#2563#2564#0" expanded="true" />
+                <element signature="e#2598#2599#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -39,8 +41,8 @@
       <file leaf-file-name="FlightInformationController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/java/FlightInformation/FlightInformationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="162" column="70" lean-forward="true" selection-start-line="162" selection-start-column="70" selection-end-line="162" selection-end-column="70" />
+            <state relative-caret-position="-1938">
+              <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -48,8 +50,12 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/java/MainScreen/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+            <state relative-caret-position="381">
+              <caret line="71" column="8" lean-forward="true" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
+              <folding>
+                <element signature="e#2667#2668#0" expanded="true" />
+                <element signature="e#2695#2696#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,8 +63,11 @@
       <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/java/MainScreen/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-680">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="-129">
+              <caret line="82" column="19" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,7 +75,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
+            <state relative-caret-position="279">
               <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
             </state>
           </provider>
@@ -108,6 +117,7 @@
       <find>bookFlightClicked</find>
       <find>weatherToday</find>
       <find>getText</find>
+      <find>launch</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -170,8 +180,8 @@
         <option value="$PROJECT_DIR$/src/Main/resources/Login/UserLoginFrame.fxml" />
         <option value="$PROJECT_DIR$/src/Main/java/WeatherAPI/JsonDecode.java" />
         <option value="$PROJECT_DIR$/src/Main/java/WeatherAPI/CityConverter.java" />
-        <option value="$PROJECT_DIR$/src/Main/java/FlightInformation/FlightInformationController.java" />
         <option value="$PROJECT_DIR$/src/Main/java/WeatherAPI/WeatherRequest.java" />
+        <option value="$PROJECT_DIR$/src/Main/java/FlightInformation/FlightInformationController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
@@ -200,9 +210,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="421" />
-    <option name="width" value="436" />
-    <option name="height" value="459" />
+    <option name="x" value="667" />
+    <option name="y" value="94" />
+    <option name="width" value="654" />
+    <option name="height" value="690" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -265,15 +276,40 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Util" type="462c0819:PsiDirectoryNode" />
+              <item name="WeatherAPI" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FlightApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="FlightApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="WeatherAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlightApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlightApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Pictures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlightApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlightApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Pictures" type="462c0819:PsiDirectoryNode" />
+              <item name="weather" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlightApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlightApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Pictures" type="462c0819:PsiDirectoryNode" />
+              <item name="weather2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -484,7 +520,8 @@
       <workItem from="1529609053536" duration="4212000" />
       <workItem from="1529665646869" duration="19047000" />
       <workItem from="1529832504738" duration="697000" />
-      <workItem from="1529932565031" duration="3384000" />
+      <workItem from="1529932565031" duration="3524000" />
+      <workItem from="1530172084947" duration="1878000" />
     </task>
     <task id="LOCAL-00001" summary="basic GMap implemenation">
       <created>1528800128324</created>
@@ -599,7 +636,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39368000" />
+    <option name="totallyTimeSpent" value="41386000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -611,7 +648,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -621,10 +658,10 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.4395004" side_tool="true" weight="0.33161512" />
       <window_info anchor="right" id="Maven Projects" order="4" weight="0.09914129" />
       <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49462366" weight="0.18773466" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5604996" visible="true" weight="0.13989238" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5604996" visible="true" weight="0.3161512" />
       <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.4945227" weight="0.32894737" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.107421875" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.23497267" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
@@ -640,10 +677,10 @@
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="bottom" id="Problems" order="10" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49938875" weight="0.32885906" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
@@ -744,11 +781,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="10" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/Data/Classes/UserTest.java" />
     <entry file="file://$PROJECT_DIR$/src/Main/java/FlightInformation/TreeViewHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -973,47 +1009,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/java/MainScreen/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/java/MainScreen/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-680">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/resources/Pictures/weather2/04n.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/java/FlightInformation/FlightInformationController.java">
+    <entry file="file://$PROJECT_DIR$/FlightApp.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/java/MainScreen/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="162" column="70" lean-forward="true" selection-start-line="162" selection-start-column="70" selection-end-line="162" selection-end-column="70" />
+        <state relative-caret-position="-129">
+          <caret line="82" column="19" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/java/WeatherAPI/WeatherRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        <state relative-caret-position="1122">
+          <caret line="66" column="1" lean-forward="true" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#3490#3491#0" expanded="true" />
-            <element signature="e#3525#3526#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#2563#2564#0" expanded="true" />
+            <element signature="e#2598#2599#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/java/MainScreen/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="71" column="8" lean-forward="true" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
+          <folding>
+            <element signature="e#2667#2668#0" expanded="true" />
+            <element signature="e#2695#2696#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/java/FlightInformation/FlightInformationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1938">
+          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
+        <state relative-caret-position="279">
           <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
         </state>
       </provider>
