@@ -27,6 +27,8 @@ import java.util.ResourceBundle;
 public class FlightInformationController implements Initializable {
 
     @FXML
+    private Text userName;
+    @FXML
     private Text flightNumber;
     @FXML
     private Text day;
@@ -42,12 +44,6 @@ public class FlightInformationController implements Initializable {
     @FXML
     private TreeView treeView;
 
-    @FXML
-    private Image wheather_today;
-    @FXML
-    private Image wheather_tomorrow;
-    @FXML
-    private Image wheather_future;
 
     @FXML
     private ImageView weatherToday;
@@ -127,6 +123,10 @@ public class FlightInformationController implements Initializable {
         Main.showMapView();
     }
 
+    public void setUserName() {
+        userName.setText(LoginController.globalUserName);
+    }
+
     public void setTreeView() throws Exception {
         if (DataManager.flightData(LoginController.globalUserName).size() == 0) {
                 treeView.setVisible(false);
@@ -137,22 +137,28 @@ public class FlightInformationController implements Initializable {
                 page.setVisible(false);
         } else {
             text.setVisible(false);
+            page.setMaxPageIndicatorCount(4);
+            page.setPageCount(DataManager.flightData(LoginController.globalUserName).size());
+            TreeViewHelper helper = new TreeViewHelper();
+            ArrayList<TreeItem> data = helper.getData(DataManager.flightData(LoginController.globalUserName).get(page.getCurrentPageIndex()));
+
+            TreeItem treeItemRoot = new TreeItem("Flight:");
+            treeItemRoot.getChildren().addAll(data);
+            treeView.setRoot(treeItemRoot);
         }
 
-        TreeViewHelper helper = new TreeViewHelper();
-        ArrayList<TreeItem> data = helper.getData(DataManager.flightData(LoginController.globalUserName).get(page.getCurrentPageIndex()));
 
-        TreeItem treeItemRoot = new TreeItem("Flight:");
-        treeItemRoot.getChildren().addAll(data);
-        treeView.setRoot(treeItemRoot);
 
     }
 
+    public void logOutPressed() throws Exception {
+        //TODO
+    }
 
-    // TODO: UserData: @Michael
-
+    
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        setUserName();
         try {
             setTreeView();
         } catch (Exception e) {

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -24,7 +25,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox prefHeight="601.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FlightInformation.FlightInformationController">
+<VBox prefHeight="601.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FlightInformation.FlightInformationController">
     <children>
         <MenuBar prefWidth="934.0" VBox.vgrow="NEVER">
             <menus>
@@ -48,11 +49,12 @@
                 </Menu>
             </menus>
         </MenuBar>
-        <SplitPane dividerPositions="0.2739420935412027" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+        <SplitPane dividerPositions="0.2661469933184855" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
             <items>
-                <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="552.0" prefWidth="215.0" SplitPane.resizableWithParent="false">
+                <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="550.0" prefWidth="225.0" SplitPane.resizableWithParent="false">
                     <children>
-                        <Label alignment="CENTER" layoutX="108.0" layoutY="14.0" style="&#10;" text="User" textAlignment="CENTER" wrapText="false">
+                        <AnchorPane layoutX="-167.0" layoutY="137.0" opacity="0.11" prefHeight="416.0" prefWidth="402.0" style="-fx-background-color: rgba(100,100,100);" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="-167.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="137.0" />
+                        <Label alignment="CENTER" layoutX="45.0" layoutY="158.0" style="&#10;" text="User" textAlignment="CENTER" wrapText="false">
                             <font>
                                 <Font size="18.0" fx:id="x1" />
                             </font>
@@ -60,7 +62,7 @@
                                 <Color blue="0.624" green="0.624" red="0.624" fx:id="x2" />
                             </textFill>
                         </Label>
-                        <Label alignment="CENTER" layoutX="79.0" layoutY="108.0" style="&#10;" text="Your Flights" textAlignment="CENTER" wrapText="false">
+                        <Label alignment="CENTER" layoutX="45.0" layoutY="222.0" style="&#10;" text="Your Flights" textAlignment="CENTER" wrapText="false">
                             <font>
                                 <Font size="18.0" fx:id="x11" />
                             </font>
@@ -68,7 +70,7 @@
                                 <Color blue="0.624" green="0.624" red="0.624" fx:id="x21" />
                             </textFill>
                         </Label>
-                        <Label alignment="CENTER" layoutX="61.0" layoutY="239.0" style="&#10;" text="Live Information" textAlignment="CENTER" wrapText="false">
+                        <Label alignment="CENTER" layoutX="50.0" layoutY="299.0" style="&#10;" text="Live Information" textAlignment="CENTER" wrapText="false">
                             <font>
                                 <Font size="18.0" fx:id="x111" />
                             </font>
@@ -76,47 +78,63 @@
                                 <Color blue="0.624" green="0.624" red="0.624" fx:id="x211" />
                             </textFill>
                         </Label>
-                  <Text layoutX="59.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Michael Schott" textAlignment="CENTER" wrappingWidth="124.4700698852539">
-                     <font>
-                        <Font size="16.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="29.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Flights are in Time" wrappingWidth="193.4700698852539">
-                     <font>
-                        <Font size="16.0" />
-                     </font>
-                  </Text>
-                  <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="84.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Pictures/man-user.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="47.0" fitWidth="21.0" layoutX="49.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Pictures/plane.png" />
-                     </image>
-                  </ImageView>
-                  <Text layoutX="49.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MUC-BER" textAlignment="CENTER" wrappingWidth="124.4700698852539">
-                     <font>
-                        <Font size="16.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="46.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BER-FRA" textAlignment="CENTER" wrappingWidth="124.4700698852539">
-                     <font>
-                        <Font size="16.0" />
-                     </font>
-                  </Text>
-                  <ImageView fitHeight="47.0" fitWidth="21.0" layoutX="28.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Pictures/icon.png" />
-                     </image>
-                  </ImageView>
-                  <Text layoutX="29.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Flight is in 50min" wrappingWidth="193.4700698852539">
-                     <font>
-                        <Font size="16.0" />
-                     </font>
-                  </Text>
-                  <Button layoutX="63.0" layoutY="374.0" mnemonicParsing="false" onAction="#toMenuButton" text="Back to Menu" AnchorPane.leftAnchor="63.0" />
+                        <Text fx:id="userName" layoutX="19.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Michael Schott" textAlignment="CENTER" wrappingWidth="124.4700698852539">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="29.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Flights are in Time" wrappingWidth="193.4700698852539">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Text>
+                        <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="19.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../pictures/man-user.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="47.0" fitWidth="21.0" layoutX="19.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../pictures/plane.png" />
+                            </image>
+                        </ImageView>
+                        <Text layoutX="1.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MUC-BER" textAlignment="CENTER" wrappingWidth="124.4700698852539">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="-3.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BER-FRA" textAlignment="CENTER" wrappingWidth="124.4700698852539">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Text>
+                        <ImageView fitHeight="47.0" fitWidth="21.0" layoutX="19.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../pictures/icon.png" />
+                            </image>
+                        </ImageView>
+                        <Text layoutX="29.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Flight is in 50min" wrappingWidth="193.4700698852539">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Text>
+                        <ImageView fitHeight="137.0" fitWidth="252.0" layoutX="-9.0" opacity="0.26" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="-9.0" AnchorPane.rightAnchor="-13.0">
+                            <image>
+                                <Image url="@../pictures/flights.jpg" />
+                            </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="42.0" layoutY="41.0" style="&#10;" text="FlightApp" textAlignment="CENTER" textFill="#262db0" wrapText="false">
+                            <font>
+                                <Font size="18.0" fx:id="x12" />
+                            </font>
+                        </Label>
+                        <JFXButton layoutY="451.0" onAction="#logOutPressed" prefHeight="41.0" prefWidth="236.0" style="-fx-background-color: rgba(100,100,100); -fx-position-shape: engle;" text="Log Out" />
+                        <JFXButton layoutY="501.0" onAction="#toMenuButton" prefHeight="41.0" prefWidth="236.0" style="-fx-background-color: rgba(100,100,100);" text="Back to Menu" />
+                        <Label alignment="CENTER" layoutX="15.0" layoutY="14.0" style="&#10;" text="Welcome to" textAlignment="CENTER" textFill="#262db0" wrapText="false">
+                            <font>
+                                <Font size="18.0" fx:id="x121" />
+                            </font>
+                        </Label>
                     </children>
                 </AnchorPane>
             <TabPane SplitPane.resizableWithParent="false">
@@ -253,17 +271,17 @@
                                                 </Text>
                                                 <ImageView fx:id="weatherToday" fitHeight="44.0" fitWidth="47.0" layoutX="122.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
                                                    <image>
-                                                      <Image url="@../Pictures/Weather/sunny.gif" />
+                                                      <Image url="@../pictures/Weather/sunny.gif" />
                                                    </image>
                                                 </ImageView>
                                                 <ImageView fx:id="weatherTomorrow" fitHeight="44.0" fitWidth="47.0" layoutX="122.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
                                                    <image>
-                                                      <Image url="@../Pictures/Weather/nt_rain.gif" />
+                                                      <Image url="@../pictures/Weather/nt_rain.gif" />
                                                    </image>
                                                 </ImageView>
                                                 <ImageView fx:id="weatherFuture" fitHeight="44.0" fitWidth="47.0" layoutX="122.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
                                                    <image>
-                                                      <Image url="@../Pictures/Weather/nt_tstorms.gif" />
+                                                      <Image url="@../pictures/Weather/nt_tstorms.gif" />
                                                    </image>
                                                 </ImageView>
                                                 <Text fx:id="tempToday" layoutX="194.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="16°" wrappingWidth="52.99999415874481">
@@ -302,7 +320,7 @@
                                           </Text>
                                           <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="18.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../Pictures/FlightStatus/flightStatusOK.png" />
+                                                <Image url="@../pictures/FlightStatus/flightStatusOK.png" />
                                              </image>
                                           </ImageView>
                                           <Text layoutX="26.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" wrappingWidth="46.66661846637726">

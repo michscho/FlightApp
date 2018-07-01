@@ -10,6 +10,7 @@ public class RequestBuilder {
 
 
     /**
+     * Here you get get an URL depending on your input
      *
      * @param departure
      * @param destination

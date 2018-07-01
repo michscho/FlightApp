@@ -22,6 +22,13 @@ public class Request {
     // get this token at https://developer.lufthansa.com/io-docs
     private static final String token = "gjhb2mun39hz9z5z9zrucqmt";
 
+    /**
+     * Send a request to Lufthansa API and gets an XML-response
+     *
+     * @param request - URL to Lufthansa API
+     * @return String with XML-Data
+     * @throws Exception
+     */
      public static String request(String request) throws Exception {
          // In developerModues you don't send any request to Lufthansa
          if (Main.developerModus){

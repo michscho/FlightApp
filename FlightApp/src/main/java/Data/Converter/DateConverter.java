@@ -3,6 +3,7 @@ package Data.Converter;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 public class DateConverter {
@@ -27,6 +28,22 @@ public class DateConverter {
         }
 
         return date;
+    }
+
+    public static String convertArrivalDate(String depatureDate, String duration) throws Exception{
+
+        DateFormat format = new SimpleDateFormat("YYYY-MM-dd'T'HH:mm");
+        int duratioInt = Integer.parseInt(duration);
+        Date date = format.parse(depatureDate);
+
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(date);
+        cal.add(Calendar.HOUR_OF_DAY, duratioInt);
+        cal.getTime();
+
+        return format.format(cal.getTime());
+
+
     }
 
 }
