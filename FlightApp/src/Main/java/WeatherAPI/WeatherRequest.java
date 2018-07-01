@@ -7,25 +7,18 @@ import java.util.Scanner;
 
 public class WeatherRequest {
 
-    private static final String APIKey = "39b1bc038434e7c0b3db7e4b96a6afb9";
-    public String city;
+    private String city;
 
     public WeatherRequest(String city) {
         this.city = city;
     }
 
-    public void arrayToString (int[] arr) { // for testing
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println("Day " + i + ": " + Integer.toString(arr[i]));
-        }
-    }
-
-    public String urlBuilder (String url) throws Exception {
-        String s = url + this.city + "&APPID=" + this.APIKey;
+    private String urlBuilder () throws Exception {
+        String s = "https://api.openweathermap.org/data/2.5/forecast?q=" + this.city + "&APPID=39b1bc038434e7c0b3db7e4b96a6afb9";
         return urlReader(new URL(s));
     }
 
-    public String urlReader (URL url) throws Exception {
+    private String urlReader (URL url) throws Exception {
         Scanner scan = new Scanner(url.openStream());
         String output = new String();
         while (scan.hasNext())
@@ -36,7 +29,7 @@ public class WeatherRequest {
     }
 
     public String[] getIcon () throws Exception {
-        String url = urlBuilder("https://api.openweathermap.org/data/2.5/forecast?q=");
+        String url = urlBuilder();
         JSONObject obj = new JSONObject(url);
 
         JSONObject today = obj.getJSONArray("list").getJSONObject(0); // Weather Today
@@ -52,7 +45,7 @@ public class WeatherRequest {
     }
 
     public int[] getTemp () throws Exception {
-        String url = urlBuilder("https://api.openweathermap.org/data/2.5/forecast?q=");
+        String url = urlBuilder();
         JSONObject obj = new JSONObject(url);
 
         JSONObject today = obj.getJSONArray("list").getJSONObject(0); // Temp Today
@@ -67,7 +60,7 @@ public class WeatherRequest {
         return temperatures;
     }
 
-    public int tempConverter(int kelvin) {
+    private int tempConverter(int kelvin) {
         return kelvin - 273;
     }
 
