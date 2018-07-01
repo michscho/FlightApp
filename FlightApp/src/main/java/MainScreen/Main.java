@@ -2,6 +2,7 @@ package MainScreen;
 
 import Data.Classes.Flight;
 import FlightInformation.FlightInformationController;
+import Login.Login;
 import javafx.application.Application;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
@@ -18,12 +19,15 @@ import java.io.IOException;
 
 public class Main extends Application {
 
+    // You can toggle developer Modus, if true you don't have to connect to the Flight API
     public static boolean developerModus = true;
-
-    private final static String userDir = "file:///" + System.getProperty("user.dir") + "\\main\\java";
 
     private static Stage primaryStage;
 
+    /**
+     * @param primaryStage
+     * @throws Exception
+     */
     public void start(Stage primaryStage) throws Exception{
         if (developerModus) {
             System.out.println("--------------------------");
@@ -64,6 +68,11 @@ public class Main extends Application {
         }
     }
 
+    /**
+     * Shows MapView
+     *
+     * @throws Exception
+     */
     public static void showMapView() throws Exception {
         FXMLLoader loader = new FXMLLoader(Main.class.getResource("GMaps.fxml"));
         Parent root = loader.load();
@@ -77,11 +86,11 @@ public class Main extends Application {
     }
 
 
-
-
-
-
-
+    /**
+     * Starts MainView
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         launch(args);
     }

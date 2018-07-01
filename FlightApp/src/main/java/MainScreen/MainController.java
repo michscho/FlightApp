@@ -53,13 +53,16 @@ public class MainController implements Initializable {
     private TableColumn priceC;
     @FXML
     private TableColumn isFullC;
+    @FXML
+    private TableView table;
 
+    /**
+     *  Fields which are edited in this class
+     */
     @FXML
     private Label dateLabel;
     @FXML
     private Label usernameLabel;
-    @FXML
-    private TableView table;
     @FXML
     private TextField departure;
     @FXML
@@ -67,19 +70,19 @@ public class MainController implements Initializable {
     @FXML
     private DatePicker date;
     @FXML
-    private CheckBox directFlight;
+    private RadioButton directFlight;
     @FXML
     private ProgressIndicator progressIndicator;
     @FXML
     private Hyperlink hyperlink;
-
-
     @FXML
     private Text userName;
 
-    private static boolean alreadyOpended = false;
-
-
+    /**
+     * set default table column names
+     *
+     * @param flightList
+     */
     public void setTable(List<Flight> flightList) {
         ObservableList<Flight> data = FXCollections.observableList(flightList);
         flightNumberC.setCellValueFactory(new PropertyValueFactory<TableColumn, String>("flightNumberC"));
@@ -98,7 +101,11 @@ public class MainController implements Initializable {
         table.setItems(data);
     }
 
-
+    /**
+     *  beginning of search request
+     *
+     * @throws Exception
+     */
     public void searchButtonClicked() throws Exception {
         progressIndicator.setVisible(true);
         String string = buildRequest(departure.getText(), arrival.getText(), date.getEditor().getText(), directFlight.isSelected());
@@ -115,9 +122,6 @@ public class MainController implements Initializable {
             progressIndicator.setVisible(false);
         }
             }
-
-
-
 
 
     public void menuAboutFlightAppClicked() throws IOException {
@@ -149,11 +153,13 @@ public class MainController implements Initializable {
         Main.showFlightInformationView(observableList);
     }
 
+    // Set Date on bottom of the View
     public void setDate() {
         DateTimeFormatter df = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm");
         dateLabel.setText("Current Time: " + LocalDateTime.now().format(df));
     }
 
+    // Set Username on bottom of the View
     public void setUsername() {
         usernameLabel.setText((Main.developerModus ?  "Developer Modus on" : "Current User: " + User.getUsername()));
         this.userName.setText(User.getUsername());
@@ -162,9 +168,9 @@ public class MainController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
         setUsername();
         setDate();
+        // Autocompletion
         try {
             TextFields.bindAutoCompletion(departure, new HashSet<String>(Arrays.asList(IANACodeConverter.getAllAttributes())).toArray(new String[0]));
             TextFields.bindAutoCompletion(arrival, new HashSet<String>(Arrays.asList(IANACodeConverter.getAllAttributes())).toArray(new String[0]));

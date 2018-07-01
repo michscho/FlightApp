@@ -55,7 +55,7 @@ public class DataManager {
         ResultSet rs = null;
         rs = connector("SELECT password FROM User where username = '"+username+"';", true);
 
-        if (rs.next()) {
+        if (rs != null && rs.next()) {
             if (rs.getString("password").equals(password)){
                 return true;
             }

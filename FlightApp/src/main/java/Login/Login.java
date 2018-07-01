@@ -11,15 +11,22 @@ public class Login extends Application {
 
     public static Stage stage;
 
+    /**
+     * Creates Scene
+     *
+     * @param primaryStage
+     * @throws Exception
+     */
     @Override
     public void start(Stage primaryStage) throws Exception {
         this.stage = primaryStage;
         FXMLLoader loader = new FXMLLoader(Login.class.getResource("UserLoginFrame.fxml"));
         Parent mainLayout = loader.load();
-        primaryStage.getIcons().add(new Image("Pictures/plane.png"));
+        primaryStage.getIcons().add(new Image("pictures/plane.png"));
         Scene scene = new Scene(mainLayout);
         primaryStage.setScene(scene);
         primaryStage.show();
         primaryStage.setResizable(false);
     }
+
 }

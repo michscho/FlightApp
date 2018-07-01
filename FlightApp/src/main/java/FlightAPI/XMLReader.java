@@ -8,6 +8,8 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;
 
 import Data.Classes.Flight;
+import Data.Converter.DateConverter;
+import Data.Converter.IANACodeConverter;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;
@@ -24,6 +26,12 @@ public class XMLReader {
         return builder.parse(is);
     }
 
+    /**
+     * XML-input reader
+     *
+     * @param string
+     * @return
+     */
     public static List<Flight> readInput(String string) {
 
         List<Flight> flightList = new ArrayList<>();
@@ -228,6 +236,10 @@ public class XMLReader {
                     if (numberOfStops.equals("0")){
                         directFlight = true;
                     }
+                    startAirport = IANACodeConverter.IANAToCity(startAirport);
+                    endAirport = IANACodeConverter.IANAToCity(endAirport);
+                    startTime = DateConverter.formatDate(startTime);
+                    endTime = DateConverter.formatDate(endTime);
                     flightList.add(
                             new Flight(
                                     flightNumber, startTime,

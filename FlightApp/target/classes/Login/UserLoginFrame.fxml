@@ -15,13 +15,13 @@
    <children>
       <ImageView fitHeight="442.0" fitWidth="697.0" layoutX="-5.0" layoutY="-1.0" opacity="0.42" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-8.0" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="-1.0">
          <image>
-            <Image url="@../Pictures/wallpaper-1050500.jpg" />
+            <Image url="@../pictures/wallpaper-1050500.jpg" />
          </image>
       </ImageView>
       <ButtonBar layoutX="320.0" layoutY="278.0" prefHeight="40.0" prefWidth="176.0" />
       <ImageView fitHeight="151.0" fitWidth="144.0" layoutX="440.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Pictures/userlogin.jpg" />
+            <Image url="@../pictures/userlogin.jpg" />
          </image>
       </ImageView>
       <AnchorPane layoutX="22.0" layoutY="27.0" opacity="0.41" prefHeight="381.0" prefWidth="311.0" style="-fx-background-color: rgba(100,100,100);" />

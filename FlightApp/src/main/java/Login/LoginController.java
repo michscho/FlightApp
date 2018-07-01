@@ -4,10 +4,7 @@ import Data.Database.DataManager;
 import MainScreen.Main;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
-import javafx.application.Platform;
 import javafx.fxml.FXML;
-
-import java.awt.*;
 
 public class LoginController {
 
@@ -19,10 +16,11 @@ public class LoginController {
     public static String globalUserName;
 
 
-    public void closePressed(){
-        Platform.exit();
-    }
-
+    /**
+     * Sign in if password is correct
+     *
+     * @throws Exception
+     */
     public void signInPressed() throws Exception {
         if (DataManager.checkPassword(username.getText(),password.getText())){
             globalUserName = username.getText();

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class StringUtil {
 
+    // [][] -> []
     public static String[] flatten(String[][] data) {
         ArrayList<String> list = new ArrayList<String>();
 
