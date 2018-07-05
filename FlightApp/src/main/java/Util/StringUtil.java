@@ -4,9 +4,12 @@ import java.util.ArrayList;
 
 public class StringUtil {
 
+    private StringUtil(){
+    }
+
     // [][] -> []
     public static String[] flatten(String[][] data) {
-        ArrayList<String> list = new ArrayList<String>();
+        ArrayList<String> list = new ArrayList<>();
 
         for(int i = 0; i < data.length; i++) {
             for(int j = 0; j < data[i].length; j++){

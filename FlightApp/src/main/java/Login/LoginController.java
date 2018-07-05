@@ -25,7 +25,7 @@ public class LoginController {
         if (DataManager.checkPassword(username.getText(),password.getText())){
             globalUserName = username.getText();
             Main main = new Main();
-            main.start(Login.stage);
+            main.start(Login.getStage());
         }
 
     }

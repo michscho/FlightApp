@@ -76,10 +76,11 @@ public class FlightInformationController implements Initializable {
     @FXML
     private Text text;
 
-    public FlightInformationController() {
+    private FlightInformationController() {
     }
 
     public void menuAboutFlightAppClicked() {
+        // TODO
     }
 
     public void menuSettingsClicked() {
@@ -178,19 +179,22 @@ public class FlightInformationController implements Initializable {
             e.printStackTrace();
         }
 
+
         tempToday.setText(Integer.toString(temperatures[0])  + "°C");
         tempTomorrow.setText(Integer.toString(temperatures[1])  + "°C");
         tempFuture.setText(Integer.toString(temperatures[2])  + "°C");
 
-        File todayFile = new File("src/Main/resources/Pictures/weather2/" + icons[0] + ".png");
+        String path = "src/Main/resources/Pictures/weather2/";
+
+        File todayFile = new File(path + icons[0] + ".png");
         Image image1 = new Image(todayFile.toURI().toString());
         weatherToday.setImage(image1);
 
-        File tomorrowFile = new File("src/Main/resources/Pictures/weather2/" + icons[1] + ".png");
+        File tomorrowFile = new File(path + icons[1] + ".png");
         Image image2 = new Image(tomorrowFile.toURI().toString());
         weatherTomorrow.setImage(image2);
 
-        File futureFile = new File("src/Main/resources/Pictures/weather2/" + icons[2] + ".png");
+        File futureFile = new File(path + icons[2] + ".png");
         Image image3 = new Image(futureFile.toURI().toString());
         weatherFuture.setImage(image3);
 

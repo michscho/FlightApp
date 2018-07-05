@@ -109,7 +109,7 @@ public class MainController implements Initializable {
     public void searchButtonClicked() throws Exception {
         progressIndicator.setVisible(true);
         String string = buildRequest(departure.getText(), arrival.getText(), date.getEditor().getText(), directFlight.isSelected());
-        if (string.equals("") && Main.developerModus == false) {
+        if (string.equals("") && !Main.developerModus) {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Search Incorrect");
             alert.setHeaderText("Please fill your search request.");
@@ -145,7 +145,6 @@ public class MainController implements Initializable {
 
     // TODO Table just opens after two clicks
     public void tableClicked() throws IOException {
-        List<String> stringList = new ArrayList<>();
         ObservableList<Flight> observableList = table.getSelectionModel().getSelectedItems();
         if (table.getSelectionModel().getSelectedItems().size() == 0){
             return;
@@ -178,17 +177,7 @@ public class MainController implements Initializable {
             e.printStackTrace();
         }
 
-        // NOT WORKING SO FAR
 
-//        TimerTask timerTask = new TimerTask() {
-//            @Override
-//            public void run() {
-//                setDate();
-//            }
-//        };
-//        Timer timer = new Timer();
-//        timer.schedule(timerTask, 20000, 20000);
-//        timerTask.run();
 
 
     }
