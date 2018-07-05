@@ -21,7 +21,6 @@ public class GMapsController  implements Initializable, MapComponentInitializedL
     @FXML
     private GoogleMapView mapView;
 
-    private GoogleMap map;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -47,7 +46,7 @@ public class GMapsController  implements Initializable, MapComponentInitializedL
                 .zoomControl(true)
                 .zoom(6);
 
-        map = mapView.createMap(mapOptions);
+        GoogleMap map = mapView.createMap(mapOptions);
 
 
         //Add markers to the map

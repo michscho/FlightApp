@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 
 public class Login extends Application {
 
-    public static Stage stage;
+    private static Stage stage;
 
     /**
      * Creates Scene
@@ -19,7 +19,6 @@ public class Login extends Application {
      */
     @Override
     public void start(Stage primaryStage) throws Exception {
-        this.stage = primaryStage;
         FXMLLoader loader = new FXMLLoader(Login.class.getResource("UserLoginFrame.fxml"));
         Parent mainLayout = loader.load();
         primaryStage.getIcons().add(new Image("pictures/plane.png"));
@@ -27,6 +26,16 @@ public class Login extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
         primaryStage.setResizable(false);
+        setStage(primaryStage);
     }
+
+     private static void setStage(Stage primaryStage){
+        stage = primaryStage;
+    }
+
+    public static Stage getStage(){
+        return stage;
+    }
+
 
 }

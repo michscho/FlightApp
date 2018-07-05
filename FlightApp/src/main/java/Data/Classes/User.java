@@ -4,8 +4,10 @@ import Login.LoginController;
 
 public class User {
 
+    private User(){
+    }
+
     private static String username;
-    private static String password;
 
     public static String getUsername() {
         return LoginController.globalUserName;

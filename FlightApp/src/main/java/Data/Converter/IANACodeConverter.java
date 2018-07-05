@@ -3,7 +3,6 @@ package Data.Converter;
 import Util.StringUtil;
 import com.Ostermiller.util.CSVParser;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
 
@@ -53,7 +52,7 @@ public class IANACodeConverter {
      */
     public static String IANAToCity(String IANACode) throws IOException {
         CSVParser csvParser = getCSVParser();
-        for (int i = 0; csvParser.getLastLineNumber() < 9020; i++) {
+        while (csvParser.getLastLineNumber() < 9020) {
             String t1 = csvParser.nextValue();
             String t2 = csvParser.nextValue();
             if (IANACode.equals(t2)) {

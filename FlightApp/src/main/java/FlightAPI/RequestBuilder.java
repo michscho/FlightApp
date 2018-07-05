@@ -8,6 +8,9 @@ import java.util.Locale;
 
 public class RequestBuilder {
 
+    private RequestBuilder(){
+    }
+
 
     /**
      * Here you get get an URL depending on your input

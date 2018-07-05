@@ -5,7 +5,7 @@ import javafx.scene.control.TreeItem;
 
 public class TreeViewHelper
 {
-    public TreeViewHelper()
+    private TreeViewHelper()
     {
     }
 
@@ -16,7 +16,7 @@ public class TreeViewHelper
     {
         this.flightData = flightData;
 
-        ArrayList<TreeItem> data = new ArrayList<TreeItem>();
+        ArrayList<TreeItem> data = new ArrayList<>();
 
         TreeItem schedule = new TreeItem("Schedule");
         schedule.getChildren().addAll(getSchedule());
@@ -46,7 +46,7 @@ public class TreeViewHelper
 
     private ArrayList<TreeItem> getSchedule()
     {
-        ArrayList<TreeItem> schedule = new ArrayList<TreeItem>();
+        ArrayList<TreeItem> schedule = new ArrayList<>();
 
         TreeItem day = new TreeItem("Day");
         TreeItem departure = new TreeItem("Departure: " + flightData[3]);
@@ -63,7 +63,7 @@ public class TreeViewHelper
 
     private ArrayList<TreeItem> getDestination()
     {
-        ArrayList<TreeItem> destination = new ArrayList<TreeItem>();
+        ArrayList<TreeItem> destination = new ArrayList<>();
 
         TreeItem departure = new TreeItem("Departure: " + flightData[2]);
         TreeItem arrival = new TreeItem("Arrival: " + flightData[1]);
@@ -76,7 +76,7 @@ public class TreeViewHelper
 
     private ArrayList<TreeItem> getNumberOfStops()
     {
-        ArrayList<TreeItem> schedule = new ArrayList<TreeItem>();
+        ArrayList<TreeItem> schedule = new ArrayList<>();
 
         TreeItem departure = new TreeItem("NumberOfStops: " + flightData[5]);
 
@@ -87,7 +87,7 @@ public class TreeViewHelper
 
     private ArrayList<TreeItem> getPrices()
     {
-        ArrayList<TreeItem> price = new ArrayList<TreeItem>();
+        ArrayList<TreeItem> price = new ArrayList<>();
 
         TreeItem ecoOrBuis;
 
@@ -104,7 +104,7 @@ public class TreeViewHelper
 
     private ArrayList<TreeItem> getAdditionalInformation()
     {
-        ArrayList<TreeItem> information = new ArrayList<TreeItem>();
+        ArrayList<TreeItem> information = new ArrayList<>();
 
         /// Current Status: Favorite <-> Open <-> Booked <-> Flought
         TreeItem status = new TreeItem("Current Status: " + flightData[9]);

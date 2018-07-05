@@ -8,6 +8,10 @@ import java.util.Date;
 
 public class DateConverter {
 
+    private DateConverter() {
+    }
+
+
     /**
      *  2018-06-09T07:00 -> 06.09 at 7:00
      *
@@ -30,11 +34,16 @@ public class DateConverter {
         return date;
     }
 
-    public static String convertArrivalDate(String depatureDate, String duration) throws Exception{
+    public static String convertArrivalDate(String depatureDate, String duration){
 
         DateFormat format = new SimpleDateFormat("YYYY-MM-dd'T'HH:mm");
         int duratioInt = Integer.parseInt(duration);
-        Date date = format.parse(depatureDate);
+        Date date = null;
+        try {
+            date = format.parse(depatureDate);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
 
         Calendar cal = Calendar.getInstance();
         cal.setTime(date);

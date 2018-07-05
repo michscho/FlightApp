@@ -2,16 +2,13 @@ package MainScreen;
 
 import Data.Classes.Flight;
 import FlightInformation.FlightInformationController;
-import Login.Login;
 import javafx.application.Application;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 
 
 import java.io.IOException;
@@ -20,7 +17,7 @@ import java.io.IOException;
 public class Main extends Application {
 
     // You can toggle developer Modus, if true you don't have to connect to the Flight API
-    public static boolean developerModus = true;
+    public static boolean developerModus = false;
 
     private static Stage primaryStage;
 
@@ -73,9 +70,14 @@ public class Main extends Application {
      *
      * @throws Exception
      */
-    public static void showMapView() throws Exception {
+    public static void showMapView() {
         FXMLLoader loader = new FXMLLoader(Main.class.getResource("GMaps.fxml"));
-        Parent root = loader.load();
+        Parent root = null;
+        try {
+            root = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         Scene scene = new Scene(root, 960, 585);
         Stage mapWindow = new Stage();
         mapWindow.setTitle("Flight App - Map");
