@@ -5,7 +5,7 @@ import javafx.scene.control.TreeItem;
 
 public class TreeViewHelper
 {
-    private TreeViewHelper()
+    public TreeViewHelper()
     {
     }
 

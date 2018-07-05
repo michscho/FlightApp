@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class StringUtil {
 
-    private StringUtil(){
+    public StringUtil(){
     }
 
     // [][] -> []
