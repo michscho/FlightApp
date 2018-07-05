@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="692.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.LoginController">
+   <children>
+      <ImageView fitHeight="442.0" fitWidth="697.0" layoutX="-5.0" layoutY="-1.0" opacity="0.42" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-8.0" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="-1.0">
+         <image>
+            <Image url="@../pictures/wallpaper-1050500.jpg" />
+         </image>
+      </ImageView>
+      <ButtonBar layoutX="320.0" layoutY="278.0" prefHeight="40.0" prefWidth="176.0" />
+      <ImageView fitHeight="151.0" fitWidth="144.0" layoutX="440.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/userlogin.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="22.0" layoutY="27.0" opacity="0.41" prefHeight="381.0" prefWidth="311.0" style="-fx-background-color: rgba(100,100,100);" />
+      <AnchorPane layoutX="73.0" layoutY="53.0" prefHeight="433.0" prefWidth="422.0">
+         <children>
+            <Text fill="#25218c" fontSmoothingType="LCD" layoutX="56.0" layoutY="22.0" stroke="#25218e" strokeLineCap="BUTT" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign In">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Hyperlink fx:id="forgetPassword" layoutX="48.0" layoutY="290.0" text="Forgot Password?" textFill="#25218c" underline="true" />
+            <JFXTextField fx:id="username" layoutX="32.0" layoutY="93.0" promptText="username" />
+            <JFXPasswordField fx:id="password" layoutX="32.0" layoutY="153.0" promptText="password" />
+            <JFXButton fx:id="sign" layoutX="72.0" layoutY="229.0" onAction="#signInPressed" style="-fx-background-color: rgba(100,100,100);" text="Sign In" />
+         </children>
+      </AnchorPane>
+      <Text fill="#25218c" fontSmoothingType="LCD" layoutX="408.0" layoutY="62.0" stroke="#25218e" strokeLineCap="BUTT" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to FlightApp">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text fill="#25218c" fontSmoothingType="LCD" layoutX="407.0" layoutY="81.0" stroke="#25218e" strokeLineCap="BUTT" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Flight reminder, finder and saver" wrappingWidth="176.0000002250299">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="signUp" layoutX="598.0" layoutY="382.0" style="-fx-background-color: rgba(100,100,100);" text="Sign Up" />
+   </children>
+</AnchorPane>
