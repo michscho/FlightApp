@@ -41,6 +41,10 @@ public class WeatherRequest {
         icons[1] = tomorrow.getJSONArray("weather").getJSONObject(0).getString("icon");
         icons[2] = future.getJSONArray("weather").getJSONObject(0).getString("icon");
 
+        for (int i = 0; i < icons.length; i++) {
+            icons[i] = isDay(icons[i]);
+        }
+
         return icons;
     }
 
@@ -58,6 +62,10 @@ public class WeatherRequest {
         temperatures[2] = tempConverter(future.getJSONObject("main").getInt("temp"));
 
         return temperatures;
+    }
+
+    public String isDay (String icon) {
+        return icon.substring(0,2)+'d'+icon.substring(3);
     }
 
     private int tempConverter(int kelvin) {
