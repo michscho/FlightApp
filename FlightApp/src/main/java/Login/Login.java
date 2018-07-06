@@ -10,6 +10,7 @@ import javafx.stage.Stage;
 public class Login extends Application {
 
     private static Stage stage;
+    private final String HOCKEYAPP_ID = "6ae524f503e94441a933f390396307d2";
 
     /**
      * Creates Scene
