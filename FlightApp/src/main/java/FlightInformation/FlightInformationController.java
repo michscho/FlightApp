@@ -183,18 +183,15 @@ public class FlightInformationController implements Initializable {
         tempTomorrow.setText(Integer.toString(temperatures[1])  + "°C");
         tempFuture.setText(Integer.toString(temperatures[2])  + "°C");
 
-        String path = "src/Main/resources/Pictures/weather2/";
+        String path = "src/Main/resources/";
 
-        File todayFile = new File(path + icons[0] + ".png");
-        Image image1 = new Image(todayFile.toURI().toString());
+        Image image1 = new Image("Pictures/weather2/" +  icons[0] +  ".png");
         weatherToday.setImage(image1);
 
-        File tomorrowFile = new File(path + icons[1] + ".png");
-        Image image2 = new Image(tomorrowFile.toURI().toString());
+        Image image2 = new Image("Pictures/weather2/" +  icons[1] +  ".png");
         weatherTomorrow.setImage(image2);
 
-        File futureFile = new File(path + icons[2] + ".png");
-        Image image3 = new Image(futureFile.toURI().toString());
+        Image image3 = new Image("Pictures/weather2/" +  icons[2] +  ".png");
         weatherFuture.setImage(image3);
 
 
