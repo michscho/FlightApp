@@ -21,11 +21,9 @@ public class IANACodeConverterTest {
         public void testGetIANACodeSpecial() throws IOException {
             String randomString = "sidjx";
             for (int i = 0; i < 10; i++) {
-                assertEquals(IANACodeConverter.Error.INVALID_CITY_NAME.toString(), IANACodeConverter.getIANACode(randomString));
+                assertEquals(randomString, IANACodeConverter.getIANACode(randomString));
                 randomString += 3;
             }
-            assertEquals(IANACodeConverter.Error.NULL_OR_EMPTY.toString(), IANACodeConverter.getIANACode(""));
-            assertEquals(IANACodeConverter.Error.NULL_OR_EMPTY.toString(), IANACodeConverter.getIANACode(null));
         }
 
 //        @Test

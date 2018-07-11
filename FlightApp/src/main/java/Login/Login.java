@@ -9,33 +9,24 @@ import javafx.stage.Stage;
 
 public class Login extends Application {
 
-    private static Stage stage;
+    public static Stage stage;
 
     /**
      * Creates Scene
-     *
+     * 
      * @param primaryStage
      * @throws Exception
      */
     @Override
     public void start(Stage primaryStage) throws Exception {
+        this.stage = primaryStage;
         FXMLLoader loader = new FXMLLoader(Login.class.getResource("UserLoginFrame.fxml"));
         Parent mainLayout = loader.load();
-        primaryStage.getIcons().add(new Image("pictures/plane.png"));
+        primaryStage.getIcons().add(new Image("Pictures/plane.png"));
         Scene scene = new Scene(mainLayout);
         primaryStage.setScene(scene);
         primaryStage.show();
         primaryStage.setResizable(false);
-        setStage(primaryStage);
     }
-
-     private static void setStage(Stage primaryStage){
-        stage = primaryStage;
-    }
-
-    public static Stage getStage(){
-        return stage;
-    }
-
 
 }
