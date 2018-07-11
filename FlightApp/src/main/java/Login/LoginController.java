@@ -21,11 +21,15 @@ public class LoginController {
      *
      * @throws Exception
      */
-    public void signInPressed() throws Exception {
-        if (DataManager.checkPassword(username.getText(),password.getText())){
-            globalUserName = username.getText();
-            Main main = new Main();
-            main.start(Login.getStage());
+    public void signInPressed()  {
+        try {
+            if (DataManager.checkPassword(username.getText(),password.getText())){
+                globalUserName = username.getText();
+                Main main = new Main();
+                main.start(Login.stage);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
     }

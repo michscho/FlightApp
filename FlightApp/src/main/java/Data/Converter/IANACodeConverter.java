@@ -42,7 +42,7 @@ public class IANACodeConverter {
 
         }
         csvParser.close();
-        return Error.INVALID_CITY_NAME.toString();
+        return cityName;
     }
 
     /**
@@ -60,7 +60,7 @@ public class IANACodeConverter {
             }
         }
         csvParser.close();
-        return Error.INVALID_IANA_CODE.toString();
+        return IANACode;
     }
 
 
