@@ -76,8 +76,7 @@ public class FlightInformationController implements Initializable {
     @FXML
     private Text text;
 
-    private FlightInformationController() {
-    }
+
 
     public void menuAboutFlightAppClicked() {
         // TODO
