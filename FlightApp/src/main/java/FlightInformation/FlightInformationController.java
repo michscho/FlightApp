@@ -183,16 +183,18 @@ public class FlightInformationController implements Initializable {
         tempTomorrow.setText(Integer.toString(temperatures[1])  + "°C");
         tempFuture.setText(Integer.toString(temperatures[2])  + "°C");
 
-        String path = "src/Main/resources/";
+        try {
+            Image image1 = new Image("Pictures/weather2/" + icons[0] + ".png");
+            weatherToday.setImage(image1);
 
-        Image image1 = new Image("Pictures/weather2/" +  icons[0] +  ".png");
-        weatherToday.setImage(image1);
+            Image image2 = new Image("Pictures/weather2/" + icons[1] + ".png");
+            weatherTomorrow.setImage(image2);
 
-        Image image2 = new Image("Pictures/weather2/" +  icons[1] +  ".png");
-        weatherTomorrow.setImage(image2);
-
-        Image image3 = new Image("Pictures/weather2/" +  icons[2] +  ".png");
-        weatherFuture.setImage(image3);
+            Image image3 = new Image("Pictures/weather2/" + icons[2] + ".png");
+            weatherFuture.setImage(image3);
+        } catch (Exception e){
+            e.printStackTrace();
+        }
 
 
         // TODO: time fixes (espically reagareding night icons) and adding temperature
