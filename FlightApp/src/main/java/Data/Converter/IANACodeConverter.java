@@ -75,7 +75,7 @@ public class IANACodeConverter {
                 String[] country = line.split(cvsSplitBy);
                 for (int i = 0; i < country.length; i++) {
                     if (country[i].equals(IANACode)) {
-                        return country[i - 2];
+                        return country[i - 1];
                     }
                 }
             }
