@@ -14,7 +14,13 @@ public class WeatherRequest {
     }
 
     private String urlBuilder () throws Exception {
-        String s = "https://api.openweathermap.org/data/2.5/forecast?q=" + this.city + "&APPID=39b1bc038434e7c0b3db7e4b96a6afb9";
+        String s = null;
+        if (this.city.equals("München")) {
+            s = "https://api.openweathermap.org/data/2.5/forecast?q=Munich&APPID=39b1bc038434e7c0b3db7e4b96a6afb9";
+        } else {
+            s = "https://api.openweathermap.org/data/2.5/forecast?q=" + this.city + "&APPID=39b1bc038434e7c0b3db7e4b96a6afb9";
+        }
+
         return urlReader(new URL(s));
     }
 
