@@ -11,7 +11,7 @@ public class IANACodeConverterTest {
 
         @Test
         public void testGetIANACodeBasic() throws IOException {
-            assertEquals("FRA", IANACodeConverter.getIANACode("Frankfurt")) ;
+            assertEquals("FRA", IANACodeConverter.getIANACode("Frankfurt am Main")) ;
             assertEquals("IST", IANACodeConverter.getIANACode("Istanbul")) ;
             assertEquals("SOF", IANACodeConverter.getIANACode("Sofia")) ;
 

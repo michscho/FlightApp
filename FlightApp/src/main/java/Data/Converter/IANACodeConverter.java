@@ -3,12 +3,101 @@ package Data.Converter;
 import Util.StringUtil;
 import com.Ostermiller.util.CSVParser;
 
-import java.io.IOException;
+import java.io.*;
 import java.net.URL;
 
 public class IANACodeConverter {
 
     private static final URL airportCSV = IANACodeConverter.class.getResource("AirportToIANACode.csv");
+
+
+    /**
+     * @param cityName
+     * @return
+     * @throws IOException
+     */
+    public static String getIANACode(String cityName) throws IOException {
+        BufferedReader br = null;
+        String line = "";
+        String cvsSplitBy = ",";
+
+        try {
+
+            br = new BufferedReader(new InputStreamReader(airportCSV.openStream()));
+            while ((line = br.readLine()) != null) {
+
+                String[] country = line.split(cvsSplitBy);
+                for (int i = 0; i < country.length; i++) {
+                    if (country[i].equals(cityName)) {
+                        if (cityName.contains("Airport"))
+                        {
+                            return country[i + 2];
+                        } else {
+                            return country[i + 1];
+                        }
+                    }
+                }
+            }
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (br != null) {
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+        return cityName;
+
+    }
+
+    /**
+     * @param IANACode
+     * @return
+     * @throws IOException
+     */
+    public static String IANAToCity(String IANACode) throws IOException {
+        BufferedReader br = null;
+        String line = "";
+        String cvsSplitBy = ",";
+
+        try {
+
+            br = new BufferedReader(new InputStreamReader(airportCSV.openStream()));
+            while ((line = br.readLine()) != null) {
+
+                String[] country = line.split(cvsSplitBy);
+                for (int i = 0; i < country.length; i++) {
+                    if (country[i].equals(IANACode)) {
+                        return country[i - 1];
+                    }
+                }
+            }
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (br != null) {
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+        return IANACode;
+
+    }
+
 
     public static CSVParser getCSVParser(){
         try {
@@ -18,51 +107,6 @@ public class IANACodeConverter {
         }
         return null;
     }
-
-    /**
-     * @param cityName
-     * @return
-     * @throws IOException
-     */
-    public static String getIANACode(String cityName) throws IOException {
-        if (cityName == null || cityName.equals("")) {
-            return Error.NULL_OR_EMPTY.toString();
-        }
-        CSVParser csvParser = getCSVParser();
-        for (String t; (t = csvParser.nextValue()) != null; ) {
-            if (t.contains(cityName)) {
-                String s1 = csvParser.nextValue();
-                String s2 = csvParser.nextValue();
-                if (s2.length() == 3) {
-                    return s2;
-                } else if (s1.length() == 3) {
-                    return s1;
-                }
-            }
-
-        }
-        csvParser.close();
-        return cityName;
-    }
-
-    /**
-     * @param IANACode
-     * @return
-     * @throws IOException
-     */
-    public static String IANAToCity(String IANACode) throws IOException {
-        CSVParser csvParser = getCSVParser();
-        while (csvParser.getLastLineNumber() < 9020) {
-            String t1 = csvParser.nextValue();
-            String t2 = csvParser.nextValue();
-            if (IANACode.equals(t2)) {
-                return t1;
-            }
-        }
-        csvParser.close();
-        return IANACode;
-    }
-
 
     /**
      * @return String with all IANA Codes and city names
@@ -75,29 +119,10 @@ public class IANACodeConverter {
 
     }
 
-    public enum Error {
-        NULL_OR_EMPTY {
-            @Override
-            public String toString() {
-                return "no input or null";
-            }
-        },
-        INVALID_CITY_NAME {
-            @Override
-            public String toString() {
-                return "invalid City Name";
-            }
-        },
-        INVALID_IANA_CODE {
-            @Override
-            public String toString() {
-                return "invalid IANACode";
-            }
-
-        }
-    }
-
 
 }
+
+
+
 
 
