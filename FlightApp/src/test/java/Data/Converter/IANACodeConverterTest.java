@@ -26,13 +26,14 @@ public class IANACodeConverterTest {
             }
         }
 
-//        @Test
-//        public void testGetIANAtoCity() throws IOException {
-//            assertEquals("Frankfurt", IANACodeConverter.IANAToCity("FRA")) ;
-//            assertEquals("Istanbul", IANACodeConverter.IANAToCity("IST")) ;
-//            assertEquals("Sofia", IANACodeConverter.IANAToCity("SOF")) ;
-//
-//        }
+        @Test
+        public void testGetIANAtoCity() throws IOException {
+            assertEquals("Frankfurt am Main", IANACodeConverter.IANAToCity("FRA")) ;
+            assertEquals("Istanbul", IANACodeConverter.IANAToCity("IST")) ;
+            assertEquals("Sofia", IANACodeConverter.IANAToCity("SOF")) ;
+            assertEquals("Munich", IANACodeConverter.IANAToCity("MUC"));
+
+        }
 
     }
 
