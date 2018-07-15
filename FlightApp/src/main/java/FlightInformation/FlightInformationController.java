@@ -1,6 +1,7 @@
 package FlightInformation;
 
 import Data.Classes.Flight;
+import Data.Converter.DateConverter;
 import Data.Converter.IANACodeConverter;
 import Data.Database.DataManager;
 import Login.LoginController;
@@ -18,7 +19,6 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -40,6 +40,8 @@ public class FlightInformationController implements Initializable {
     private Text destination;
     @FXML
     private Text arrival;
+    @FXML
+    private Text duration;
 
     @FXML
     private TreeView treeView;
@@ -77,7 +79,6 @@ public class FlightInformationController implements Initializable {
     private Text text;
 
 
-
     public void menuAboutFlightAppClicked() {
         // TODO
     }
@@ -99,19 +100,21 @@ public class FlightInformationController implements Initializable {
         flightNumber.setText(observableList.get(0).getFlightNumberC());
         departureTime.setText(observableList.get(0).getStartTimeC());
         arrivalTime.setText(observableList.get(0).getEndTimeC());
+        duration.setText(DateConverter.getDuration(observableList.get(0).getStartTimeC(), observableList.get(0).getEndTimeC()));
         destination.setText(IANACodeConverter.IANAToCity(observableList.get(0).getStartAirportC()));
         arrival.setText(IANACodeConverter.IANAToCity(observableList.get(0).getEndAirportC()));
+        day.setText(DateConverter.getDayOfWeek(observableList.get(0).getStartTimeC()));
     }
 
     public void bookFlightClicked() {
-        DataManager.safeFlightData(destination.getText(),arrival.getText(),departureTime.getText(),-1.,-1,"na");
-        DataManager.safeBookedFlights(2,2,-1,-1,"",-1);
+        DataManager.safeFlightData(destination.getText(), arrival.getText(), departureTime.getText(), -1., -1, "na");
+        DataManager.safeBookedFlights(2, 2, -1, -1, "", -1);
 
     }
 
     public void favoriteFlightClicked() {
-        DataManager.safeFlightData(destination.getText(),arrival.getText(),departureTime.getText(),2.,-1,"na");
-        DataManager.safeBookedFlights(2,2,-1,-1,"favourited",-1);
+        DataManager.safeFlightData(destination.getText(), arrival.getText(), departureTime.getText(), 2., -1, "na");
+        DataManager.safeBookedFlights(2, 2, -1, -1, "favourited", -1);
     }
 
 
@@ -129,12 +132,12 @@ public class FlightInformationController implements Initializable {
 
     public void setTreeView() throws Exception {
         if (DataManager.flightData(LoginController.globalUserName).size() == 0) {
-                treeView.setVisible(false);
-                mapButton.setVisible(false);
-                rateButton.setVisible(false);
-                requestButton.setVisible(false);
-                cancelButton.setVisible(false);
-                page.setVisible(false);
+            treeView.setVisible(false);
+            mapButton.setVisible(false);
+            rateButton.setVisible(false);
+            requestButton.setVisible(false);
+            cancelButton.setVisible(false);
+            page.setVisible(false);
         } else {
             text.setVisible(false);
             page.setMaxPageIndicatorCount(4);
@@ -148,14 +151,13 @@ public class FlightInformationController implements Initializable {
         }
 
 
-
     }
 
     public void logOutPressed() throws Exception {
         //TODO
     }
 
-    
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         setUserName();
@@ -179,9 +181,9 @@ public class FlightInformationController implements Initializable {
         }
 
 
-        tempToday.setText(Integer.toString(temperatures[0])  + "°C");
-        tempTomorrow.setText(Integer.toString(temperatures[1])  + "°C");
-        tempFuture.setText(Integer.toString(temperatures[2])  + "°C");
+        tempToday.setText(Integer.toString(temperatures[0]) + "°C");
+        tempTomorrow.setText(Integer.toString(temperatures[1]) + "°C");
+        tempFuture.setText(Integer.toString(temperatures[2]) + "°C");
 
         try {
             Image image1 = new Image("Pictures/weather2/" + icons[0] + ".png");
@@ -192,7 +194,7 @@ public class FlightInformationController implements Initializable {
 
             Image image3 = new Image("Pictures/weather2/" + icons[2] + ".png");
             weatherFuture.setImage(image3);
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
