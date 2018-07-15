@@ -209,12 +209,12 @@
                                                 <Font size="16.0" />
                                              </font>
                                           </Text>
-                                          <Text fx:id="destination" layoutX="22.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="München" wrappingWidth="72.99999967217445">
+                                          <Text fx:id="destination" layoutX="19.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="München" wrappingWidth="150.99999967217445">
                                              <font>
                                                 <Font size="16.0" />
                                              </font>
                                           </Text>
-                                          <Text fx:id="arrival" layoutX="163.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Berlin" wrappingWidth="72.99999967217445">
+                                          <Text fx:id="arrival" layoutX="157.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Berlin" wrappingWidth="138.99999967217445">
                                              <font>
                                                 <Font size="16.0" />
                                              </font>
@@ -224,12 +224,12 @@
                                                 <Font size="16.0" />
                                              </font>
                                           </Text>
-                                          <Text fx:id="departureTime" layoutX="123.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="28.05 - 20:41" wrappingWidth="93.99999976158142">
+                                          <Text fx:id="departureTime" layoutX="122.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="28.05 - 20:41" wrappingWidth="114.99999976158142">
                                              <font>
                                                 <Font size="16.0" />
                                              </font>
                                           </Text>
-                                          <Text fx:id="arrivalTime" layoutX="250.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="28.05 - 21:52" wrappingWidth="93.99999976158142">
+                                          <Text fx:id="arrivalTime" layoutX="235.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="28.05 - 21:52" wrappingWidth="129.99999225139618">
                                              <font>
                                                 <Font size="16.0" />
                                              </font>
@@ -239,7 +239,7 @@
                                                 <Font size="16.0" />
                                              </font>
                                           </Text>
-                                          <Text fx:id="arrivalTime1" layoutX="375.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1T 2H 3M" wrappingWidth="93.99999976158142">
+                                          <Text fx:id="duration" layoutX="373.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1T 2H 3M" wrappingWidth="155.99999976158142">
                                              <font>
                                                 <Font size="16.0" />
                                              </font>
