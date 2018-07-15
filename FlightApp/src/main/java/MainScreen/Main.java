@@ -41,7 +41,7 @@ public class Main extends Application {
         FXMLLoader loader = new FXMLLoader(Main.class.getResource("MainFrame.fxml"));
         primaryStage.setTitle("Flight App - Menu");
         Parent mainLayout = loader.load();
-        Scene scene = new Scene(mainLayout,960, 584);
+        Scene scene = new Scene(mainLayout,900, 600);
         primaryStage.setScene(scene);
         primaryStage.show();
         primaryStage.setResizable(true);
@@ -55,7 +55,7 @@ public class Main extends Application {
         FXMLLoader loader = new FXMLLoader(Main.class.getResource("FlightInformationFrame.fxml"));
         primaryStage.setTitle("Flight App - Flight Information");
         Parent root = loader.load();
-        Scene scene = new Scene(root, 960, 585);
+        Scene scene = new Scene(root, 900, 600);
         primaryStage.setScene(scene);
         FlightInformationController controller = loader.getController();
         try {

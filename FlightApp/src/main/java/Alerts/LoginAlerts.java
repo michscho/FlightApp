@@ -1,18 +1,14 @@
 package Alerts;
 
 import Data.Database.DataManager;
-import javafx.application.Platform;
 import javafx.geometry.Insets;
 import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import javafx.util.Pair;
 
-import java.sql.SQLOutput;
-import java.util.Optional;
 
 public class LoginAlerts {
 

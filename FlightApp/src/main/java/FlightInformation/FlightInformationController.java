@@ -8,13 +8,12 @@ import Login.LoginController;
 import MainScreen.Main;
 import WeatherAPI.WeatherRequest;
 import javafx.application.Platform;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.Pagination;
-import javafx.scene.control.TreeItem;
-import javafx.scene.control.TreeView;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
@@ -77,6 +76,9 @@ public class FlightInformationController implements Initializable {
 
     @FXML
     private Text text;
+
+    @FXML
+    private SplitPane splitPane;
 
 
     public void menuAboutFlightAppClicked() {
@@ -157,9 +159,21 @@ public class FlightInformationController implements Initializable {
         //TODO
     }
 
+    double pos = 0;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        pos = splitPane.getDividers().get(0).getPosition();
+        splitPane.getDividers().get(0).positionProperty().addListener(new ChangeListener<Number>() {
+            @Override
+            public void changed(ObservableValue<? extends Number> arg0,
+                                Number arg1, Number arg2) {
+                splitPane.getDividers().get(0).setPosition(pos);
+            }
+        });
+
+
+
         setUserName();
         try {
             setTreeView();
