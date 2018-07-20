@@ -3,8 +3,10 @@ package Data.Converter;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 public class DateConverter {
 
@@ -33,6 +35,45 @@ public class DateConverter {
 
         return date;
     }
+
+    public static String getDuration(String startTime, String endTime){
+
+       DateFormat dF = new SimpleDateFormat("dd.MM' at 'hh:mm");
+       try {
+           Date startDate = dF.parse(startTime);
+           Date endDate = dF.parse(endTime);
+           long duration = endDate.getTime() - startDate.getTime();
+           return TimeUnit.MILLISECONDS.toHours(duration) + " hour(s) and "  + (TimeUnit.MILLISECONDS.toMinutes(duration) - TimeUnit.MILLISECONDS.toHours(duration) * 60)  +  " minute(s)";
+       }
+       catch (ParseException e){
+           e.printStackTrace();
+       }
+
+        return "";
+    }
+
+    public static String getDayOfWeek(String time){
+        DateFormat dF = new SimpleDateFormat("dd.MM' at 'hh:mm");
+        try {
+            Date startDate = dF.parse(time);
+            dF.getCalendar().setTime(startDate);
+            dF.getCalendar().add(Calendar.YEAR,48);
+            System.out.println(dF.getCalendar().getTime().toString());
+            String[] strDays = new String[] { "Sunday", "Monday", "Tuesday", "Wednesday", "Thusday",
+                    "Friday", "Saturday" };
+            return strDays[dF.getCalendar().get(Calendar.DAY_OF_WEEK)-1];
+
+        }
+        catch (ParseException e){
+            e.printStackTrace();
+        }
+
+        return "";
+
+    }
+
+
+
 
     public static String convertArrivalDate(String depatureDate, String duration){
 
