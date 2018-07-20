@@ -48,6 +48,6 @@
             <Font size="13.0" />
          </font>
       </Text>
-      <JFXButton fx:id="signUp" layoutX="598.0" layoutY="382.0" style="-fx-background-color: rgba(100,100,100);" text="Sign Up" />
+      <JFXButton fx:id="signUp" layoutX="598.0" layoutY="382.0" onAction="#signUpPressed" style="-fx-background-color: rgba(100,100,100);" text="Sign Up" />
    </children>
 </AnchorPane>
